@@ -36,6 +36,6 @@ const KaterDescribe = ({active, setActive}) => {
       
     </div>
   )
-}
+} 
 
 export default KaterDescribe

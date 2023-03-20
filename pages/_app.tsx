@@ -22,13 +22,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <div className="App">
         <div className="container">
-
           <Layout>
             <Component {...pageProps} />
-
           </Layout>
         </div>
-
       </div>
     </>
   )

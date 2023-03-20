@@ -28,7 +28,7 @@ const Footer = () => {
                 © Mangoose Marine 2023 - Privacy Policy
                 </div>
                 <div className={styles.footer__bottom__right}>
-                Created by <a href="#">PROlab</a> 
+                 Created by <a href="#">PROlab</a> 
                 </div>
             </div>
         </div>
