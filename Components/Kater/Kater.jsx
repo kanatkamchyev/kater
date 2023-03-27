@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 
-
 import lodka from '../../assets/img/lodkaJSN.svg'
 import { KaterBack, KaterPlus } from '../../assets/svg/svg'
 import BoxKater from './BoxKater'

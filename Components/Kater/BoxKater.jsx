@@ -12,7 +12,7 @@ const BoxKater = ({kater, activeKater, setActiveKater}) => {
             <div className={styles.kater__box__imgbg}>
                 <div className={styles.kater__box__image} onClick={() => setActiveKater(!activeKater)}>
                     <Image
-                     src={kater.image}
+                      src={kater.image}
                       alt=""
                       width='880'
                       height='483'

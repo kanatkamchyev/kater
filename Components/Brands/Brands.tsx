@@ -1,4 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
 
 import humminbird from '../../assets/img/humminbird.svg'
 import mercury from '../../assets/img/mercury.svg'
@@ -13,8 +16,6 @@ import opacmare from '../../assets/img/opacmare.svg'
 import williams from '../../assets/img/williams.svg'
 import { SendCatalog } from '../../assets/svg/svg'
 import styles from '../Brands/brands.module.scss'
-import Image from 'next/image'
-import Link from 'next/link'
 
 const Brands = () => {
     return (

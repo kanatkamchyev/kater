@@ -3,8 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-
-
 const NavBars = [
     {
         name: 'Главная',
@@ -16,15 +14,23 @@ const NavBars = [
         link: '/Catalog',
     },
 
+
     {
         name: ' Про нас',
         link: '/About',
     },
 
     {
+        name: 'Проекты',
+        link: '/OurProjects',
+    },
+
+
+    {
         name: 'Конаткты',
         link: '/Contacts',
     },
+
 ]
 
 

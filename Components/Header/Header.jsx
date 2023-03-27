@@ -5,7 +5,6 @@ import React, { useState } from 'react'
 import SideBar from './SideBar'
 import HeaderLogo from '../../assets/svg/svg'
 
-
 const Header = () => {
 
     const [activeMenu, setActiveMenu] = useState(false)

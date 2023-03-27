@@ -4,7 +4,6 @@ import Link from 'next/link'
 import styles from '../Kater/kater.module.scss'
 
 
-
 import pic from '../../assets/img/pic.png'
 import { ClosePopUp } from '../../assets/svg/svg'
 

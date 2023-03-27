@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 
 import letter from '../../assets/img/letter_send.svg'
 import { Phone, Message, Locate } from '../../assets/svg/svg'
+import { Facebook, Instagramm, Telegramm, Wc } from '../../assets/svg/svg'
 import xui from '../../assets/img/xuinya.png'
 import hide from '../../assets/img/hidecon.png'
 import styles from '../Contactus/contactus.module.scss'
-import Image from 'next/image'
 
 
 const Contactus = () => {
@@ -80,12 +82,10 @@ const Contactus = () => {
                         </div>
 
                         <div className={styles.contact__right__lis}>
-                            <ul>
-                                <li><a href="#">telegram</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">facebook</a></li>
-                                <li><a href="#">vkontakte</a></li>
-                            </ul>
+                            <Wc />
+                            <Instagramm />
+                            <Facebook />
+                            <Telegramm />
                         </div>
                     </div>
 

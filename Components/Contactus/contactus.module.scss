@@ -84,7 +84,6 @@ img.hidden__con{
         }
     }
 
-    &__center {}
 
     &__right__title {
         font-family: 'Prompt', sans-serif;
@@ -135,20 +134,15 @@ img.hidden__con{
 
     }
 
-    &__right__lis ul {
+    &__right__lis {
         margin-top: 190px;
         display: flex;
-        gap: 18px;
+        gap: 25px;
 
-        li a {
-            font-family: 'Prompt', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 30px;
-            letter-spacing: 0.04em;
-            color: #385981;
+        svg{
+            cursor: pointer;
         }
+
     }
 
 

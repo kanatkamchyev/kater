@@ -7,7 +7,6 @@ import { Pagination, Autoplay} from "swiper";
 import Image from 'next/image';
 
 
-
 import gradient from '../CanIHelp/assets/svg/home_bg.svg'
 import letter from '../../assets/img/letter.svg'
 import { Facebook, Instagramm, Telegramm, Wc } from '../../assets/svg/svg'

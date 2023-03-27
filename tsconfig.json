@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "Components/Header/Header.jsx", "Components/AboutUs/Aboutus.jsx", "Components/ForWork/Forwork.jsx", "Components/Layout.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "Components/Header/Header.jsx", "Components/AboutUs/Aboutus.jsx", "Components/ForWork/Forwork.jsx", "Components/Layout.jsx", "Components/CanIHelp/CanIHelp.jsx"],
   "exclude": ["node_modules"]
 }
