@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay"
-import { Pagination, Autoplay} from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import Image from 'next/image';
 
 
@@ -12,6 +12,7 @@ import letter from '../../assets/img/letter.svg'
 import { Facebook, Instagramm, Telegramm, Wc } from '../../assets/svg/svg'
 import about from '../../assets/img/aboutimg.png'
 import styles from '../AboutUs/aboutus.module.scss'
+import Link from 'next/link';
 
 
 const Aboutus = ({ Bigtitle }) => {
@@ -27,7 +28,7 @@ const Aboutus = ({ Bigtitle }) => {
                         </div>
                         <div className={styles.about__card__head__description}>
                             Миссия компании: стать надёжным другом и поставщиком владельцу судна!
-                            мы поможем вам проконсультироваться и помочь в подборе судна и деталей
+                            мМы помогаем Вам воплотить мечту в реальность, не переплачивая …
                         </div>
                         <div className={styles.about__card__head__bg}>
                             <Image src={gradient} alt="" />
@@ -36,34 +37,43 @@ const Aboutus = ({ Bigtitle }) => {
                         <div className={styles.about__card__head__boxes}>
                             <div className={styles.box}>
                                 <div className={styles.box__h1}>
-                                    200+
+                                    1500+
                                 </div>
                                 <div className={styles.box__describe}>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    оказанных технических консультаций
                                 </div>
                             </div>
                             <div className={styles.box}>
                                 <div className={styles.box__h1}>
-                                    86+
+                                    1000+
                                 </div>
                                 <div className={styles.box__describe}>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    довольных клиентов
                                 </div>
                             </div>
                             <div className={styles.box}>
                                 <div className={styles.box__h1}>
-                                    12+
+                                    500+
                                 </div>
                                 <div className={styles.box__describe}>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    успешно выполненных заказов
                                 </div>
                             </div>
                             <div className={styles.box}>
                                 <div className={styles.box__h1}>
-                                    5+
+                                    13+
                                 </div>
                                 <div className={styles.box__describe}>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    опыта работы в сфере судостроения
+                                </div>
+                            </div>
+
+                            <div className={styles.box}>
+                                <div className={styles.box__h1}>
+                                    100+
+                                </div>
+                                <div className={styles.box__describe}>
+                                    оборудованных катеров
                                 </div>
                             </div>
                         </div>
@@ -80,15 +90,27 @@ const Aboutus = ({ Bigtitle }) => {
 
                             <div className={styles.about__card__description}>
                                 Миссия компании: стать надёжным другом и поставщиком владельцу судна!
-                                О компании: Компания Mangoose-marine предлагает полный спектр услуг в области подбора и продажи судового и навигационного оборудования. Мы стараемся работать напрямую с производителями. Всегда слышим наших Клиентов, готовы проконсультировать и подобрать соответствующее оборудование под самые сложные проекты и индивидуальные потребности.
+                                Компания Mangoose-marine предлагает полный спектр услуг в области подбора и продажи судового и навигационного оборудования. Мы стараемся работать напрямую с производителями. Всегда слышим наших Клиентов, консультируем и подбираем соответствующее оборудование под самые сложные проекты и индивидуальные потребности, экономя время и деньги наших клиентов.
                                 В компании работают специалисты с многолетним стажем работы, которые регулярно повышают свою квалификацию.
                             </div>
 
+                            <div className={styles.about__company__head}>
+                            Основатель компании: Абрамов Сергей
+                            </div>
+
+                            <div className={styles.about__company__head}>
+                            Eго слова в кружке-
+                            </div>
+
+                            <div className={styles.about__company__head}>
+                            «Удовольствие на воде можно получить только тогда, когда чувствуешь, что всё под контролем и ты в безопасности!  За это отвечает оборудование
+                            </div>
+
                             <div className={styles.about__card__sites}>
-                                <Wc />
-                                <Instagramm />
-                                <Facebook />
-                                <Telegramm />
+                                <Link href='https://vk.com/id197552724'>  <Wc /> </Link>
+                                <Link href='https://instagram.com/sergey.abramov_?igshid=YmMyMTA2M2Y='><Instagramm /> </Link>
+                                <Link href='https://www.facebook.com/abramov.screamzloy'> <Facebook />  </Link>
+                                <Link href='https://t.me/zakazmangoosemarine'> <Telegramm />  </Link>
                             </div>
 
                             {
@@ -111,7 +133,7 @@ const Aboutus = ({ Bigtitle }) => {
                                         clickable: true,
                                     }}
                                     modules={[Pagination, Autoplay]}
-                                    autoplay={{delay:4000}}
+                                    autoplay={{ delay: 4000 }}
                                     className={styles.mySwiper}
                                 >
                                     <SwiperSlide className='swiper_slide'>

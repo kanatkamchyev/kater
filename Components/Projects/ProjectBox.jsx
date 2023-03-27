@@ -35,8 +35,8 @@ const ProjectBox = ({ project }) => {
                                     Отзывы:
                                 </div>
                                 <div className={styles.otzyv__imgs}>
-                                    <a href=""><Avito/></a>
-                                    <a href=""><Telegramm/></a>
+                                    <a href="https://www.avito.ru/user/81511eb6d229b1e175bc8934f1432565/profile?src=sharing"><Avito/></a>
+                                    <a href="https://t.me/zakazmangoosemarine"><Telegramm/></a>
                                 </div>
                             </div>
 

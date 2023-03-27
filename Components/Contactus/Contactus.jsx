@@ -7,6 +7,7 @@ import { Facebook, Instagramm, Telegramm, Wc } from '../../assets/svg/svg'
 import xui from '../../assets/img/xuinya.png'
 import hide from '../../assets/img/hidecon.png'
 import styles from '../Contactus/contactus.module.scss'
+import Link from 'next/link'
 
 
 const Contactus = () => {
@@ -82,10 +83,10 @@ const Contactus = () => {
                         </div>
 
                         <div className={styles.contact__right__lis}>
-                            <Wc />
-                            <Instagramm />
-                            <Facebook />
-                            <Telegramm />
+                            <Link href='https://vk.com/id197552724'>  <Wc /> </Link>
+                            <Link href='https://instagram.com/sergey.abramov_?igshid=YmMyMTA2M2Y='><Instagramm /> </Link>
+                            <Link href='https://www.facebook.com/abramov.screamzloy'> <Facebook />  </Link>
+                            <Link href='https://t.me/zakazmangoosemarine'> <Telegramm />  </Link>
                         </div>
                     </div>
 

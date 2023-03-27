@@ -7,40 +7,36 @@ import yamaha from '../../assets/img/yamaha.svg'
 import mercury from '../../assets/img/mercury.svg'
 import { ClosePopUp } from '../../assets/svg/svg'
 import styles from '../Bestlers/braslets.module.scss'
+import Brands from './Brands'
 
 
 const Modal = ({ active, setActive, item }) => {
 
+    const { brands, title, description, delivery, } = item
+
     return (
         <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
             <div className={active ? "modal__content active" : "modal__content"} onClick={(e) => e.stopPropagation()}>
-                <div className={styles.left__modal__content}>
-                    <div className={styles.left__modal__insiders}>
-                         <div className={styles.motorbich}>
-                        MOTORS
-                    </div>
-                    <div className={styles.motorbichIMG}>
-                        <Image
-                            src={item.img}
-                            alt=""
-                            width='344'
-                            height='436'
-                        />
-                    </div>
-                    </div>
-
-                   
-                </div>
-
                 <div className={styles.right__modal__content}>
-                    <div className={styles.moda__petrol__content}>
-                        <div className={styles.modal__right__title}>
-                            {item.title}
+                    <div className={styles.flex__brand}>
+                        <div className={styles.flexed__img}>
+                            <Image src={item.img} width='200' height='300'/>
                         </div>
-                        <div className={styles.modal__right__describe}>
-                            Наша компания поставляет подвесные бензиновые двигатели в полной комплектации от официального дилера под заказ. Срок поставки от 15 до 20 дней. Предоплата 50%
+                        <div className={styles.moda__petrol__content}>
+                            <div className={styles.modal__right__title}>
+                                {title}
+                            </div>
+                            <div className={styles.modal__right__describe}>
+                                {description}
+                            </div>
+
+                            <div className={styles.modal__right__describe}>
+                                {delivery}
+                            </div>
                         </div>
+
                     </div>
+
 
                     <div className={styles.modal__content__brands}>
                         <div className={styles.modal__right__title}>
@@ -51,15 +47,9 @@ const Modal = ({ active, setActive, item }) => {
                             Мы поставляем моторы из этих брендов
                         </div>
                         <div className={styles.modal__right__brandimg}>
-                            <div className={styles.modal__brand__imgages}>
-                                <Image src={suzuki} alt="" />
-                            </div>
-                            <div className={styles.modal__brand__imgages}>
-                                <Image src={yamaha} alt="" />
-                            </div>
-                            <div className={styles.modal__brand__imgages}>
-                                <Image src={mercury} alt="" />
-                            </div>
+                            {
+                                brands && brands.map((brand) => <Brands brand={brand} key={brand.id} />)
+                            }
                         </div>
                     </div>
 

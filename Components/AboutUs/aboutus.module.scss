@@ -114,6 +114,17 @@
         color: #636363;
     }
 
+    &__company__head {
+        margin-top: 28px;
+        font-family: 'Prompt', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #636363;
+    }
+
     &__card__sites {
         margin-top: 31px;
         display: flex;
@@ -124,7 +135,7 @@
         position: absolute;
         z-index: -1;
         right: 0;
-        bottom: -40%;
+        bottom: -20%;
     }
 
     &__card__right {
@@ -215,13 +226,14 @@
 
 
 
-    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+    .swiper-pagination-vertical.swiper-pagination-bullets,
+    .swiper-vertical>.swiper-pagination-bullets {
         position: absolute;
         right: 0;
         top: 35%;
     }
 
-    .mySwiper img{
+    .mySwiper img {
         width: 300px;
         height: 400px;
     }
@@ -234,7 +246,7 @@
         line-height: 72px;
     }
 
-    .about__card__head__boxes{
+    .about__card__head__boxes {
         margin-bottom: 20px;
     }
 
@@ -251,30 +263,30 @@
         right: -15%;
     }
 
-    .about__card__letter{
+    .about__card__letter {
         bottom: -10%;
     }
 
-    .about__card__letter img{
+    .about__card__letter img {
         width: 200px;
         height: 160px;
     }
 }
 
 @media(max-width:420px) {
-    .about__card__right .swiper-vertical > .swiper-wrapper{
+    .about__card__right .swiper-vertical>.swiper-wrapper {
         height: 300px;
     }
 
-    .about__card__right .about_swiper_content{
+    .about__card__right .about_swiper_content {
         height: 330px;
     }
 
-    .mySwiper{
+    .mySwiper {
         height: 320px;
     }
 
-    .mySwiper img{
+    .mySwiper img {
         width: 250px;
         height: 300px;
     }
@@ -283,12 +295,12 @@
 }
 
 @media(max-width:385px) {
-    .mySwiper img{
+    .mySwiper img {
         width: 200px;
         height: 250px;
     }
 
-    .about__card__right .about_swiper_content{
+    .about__card__right .about_swiper_content {
         height: 280px;
     }
 
