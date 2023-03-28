@@ -35,6 +35,5 @@ const bestlerSlice = createSlice({
 
 export const {setCurrentBestler} = bestlerSlice.actions;
 
-export const selectBestlerState = (state: AppState) => state.currentBestler;
 
 export default bestlerSlice.reducer;

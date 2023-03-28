@@ -26,7 +26,8 @@ const Details = [
         link: '/imgs/SUZUKI.pdf'
 
       }
-    ]
+    ],
+    power : [ 'Минимальная мощность от 9.9л.с. до 60 л.с.', 'Средняя мощность от 90 л.с до 200 л.с', 'Максимальная мощность от 225 л.с. – до 450 л.с.'    ]
   },
 
   {
@@ -62,7 +63,9 @@ const Details = [
         link: '/imgs/GARMIN.pdf'
 
       }
-    ]
+    ],
+
+    power: [' Тяговитая мощность электромотора от 9.9л.с. до 60 л.с.', 'Длинна вала электромотора- штанга от 120 см до 183 см', ' Электропитание электромотора от 24 вольт до 36 вольт. ']
   },
 
   {
@@ -74,7 +77,7 @@ const Details = [
     brands:[
       {
         id: 1,
-        img: '/imgs/paguro',
+        img: '/imgs/paguro.png',
         link: '/imgs/'
 
 
@@ -82,7 +85,7 @@ const Details = [
 
       {
         id: 2,
-        img: '/imgs/fisherpanda',
+        img: '/imgs/fisherpanda.png',
         link: 'imgs/'
 
 
@@ -90,7 +93,7 @@ const Details = [
 
       {
         id:3,
-        img: '/imgs/wester',
+        img: '/imgs/westerbeke.png',
         link: 'imgs/'
 
 
@@ -98,12 +101,14 @@ const Details = [
 
       {
         id: 4,
-        img: '/imgs/whisper',
+        img: '/imgs/whisper.png',
         link: '/imgs/'
 
 
       },
-    ]
+    ],
+
+    power : [ 'Непрерывная Мощность генератора от 4 кВт. до 60 квт', ' Выходное напряжение - 230 В / 50 Гц', 'Рекомендованная батарея стартера 12 вольт до 36 вольт.'    ]
 
   },
 
@@ -145,11 +150,13 @@ const Details = [
 
       {
         id:5,
-        img: '/imgs/furuno',
+        img: '/imgs/furuno.png',
         link: '/imgs/FURUNO.pdf'
 
       },
-    ]
+    ],
+
+    power : ['Диагональ экрана от 5 дюймов. до 24 дюймов', 'Поддержка преобразователей PANOPTIX, ACTIVE TARGET, 3D VISION,', 'ACTIV-IMAGING, Forward scan ', 'Врезные в панель или  установка на кронштейн ', 'Встроенный модуль WIFI/ GPS/ Bluetooth','Поддержка   протоколов сети NMEA 2000/ ETHERNET/ SEATOLK', 'Поддержка навигационных карт С – MAP,  NAVIONICS. ']
   },
 
   {
@@ -177,7 +184,7 @@ const Details = [
 
       {
         id:3,
-        img: '/imgs/raymaine.svg',
+        img: '/imgs/raymarine.svg',
         link: '/imgs/RAYMARINE.pdf'
 
 
@@ -193,12 +200,14 @@ const Details = [
 
       {
         id: 5,
-        img: '/imgs/furuno',
+        img: '/imgs/furuno.png',
         link: '/imgs/FURUNO.pdf'
 
 
       },
-    ]
+    ],
+    
+    power: ['Дальность видимости 24 -48 морских миль', '   Скорость вращения антенны 24 -60 оборотов', 'Отслеживание целей MARPA (от 10 до 20 целей)', ' ШИРИНА ЛУЧА: до 5,2° по горизонтали, до 25° по вертикали', ' Низкое излучение', 'Интеграция с картплоттером по WIFI']
   },
 
   {
@@ -228,7 +237,9 @@ const Details = [
         link: '/imgs/RAYMARINE.pdf'
 
       },
-    ]
+    ],
+
+    power : [' Создание маршрута «в одно касание»' , 'VRF (Virtual Rudder Feedback).', ' Насос от 0,8 л (49 куб. дюймов) / литра в минуту', 'Электронный компас ', 'Для катеров от 6 м до 30 метров', 'Независимый контроллер управления']
   },
 
   {
@@ -264,12 +275,14 @@ const Details = [
 
       {
         id: 4,
-        img: '/imgs/furuno',
+        img: '/imgs/furuno.png',
         link: '/imgs/FURUNO.pdf'
 
 
       },
-    ]
+    ],
+     
+    power : ['Поддерживает GPS и ГЛОНАСС', 'Обновления с частотой 10 Гц', ' Водонепроницаемая', ' Датчик положения и направления NMEA 2000®', 'Компактная, надежная конструкция ', 'Встроенный электронный компас', ' Точность курса ±2° после калибровки']
   },
 
   {
@@ -304,7 +317,7 @@ const Details = [
 
       {
         id: 4,
-        img: '/imgs/simrad',
+        img: '/imgs/simrad.png',
         link: '/imgs/SIMRAD.pdf'
 
 
@@ -312,12 +325,14 @@ const Details = [
 
       {
         id: 5,
-        img: '/imgs/furuno',
+        img: '/imgs/furuno.png',
         link: '/imgs/FURUNO.pdf'
 
 
       },
-    ]
+    ],
+    
+    power : ['  Внутренний GPS', 'ЖК-дисплей высокой четкости ', 'Одобрено DSC класса D', 'Клавиши выделенного канала 16', 'Несколько режимов сканирования', ' Простая установка на кронштейн или врезка ']
   },
 
 
@@ -352,12 +367,14 @@ const Details = [
 
       {
         id: 4,
-        img: '/imgs/simrad',
+        img: '/imgs/simrad.png',
         link: '/imgs/SIMRAD.pdf'
 
 
       },
-    ]
+    ],
+     
+    power: [' Четкое изображение рыбы и структуры ', 'Высокое разрешение (до 1,2 МГц) SideScan и DownScan', 'Изображение рельефа дна в проекции 2D', 'Live Scope™, PANOTIX, ACTIV TARGET', 'Forward scan', 'REAL VISION 3D']
   },
 
 
@@ -393,11 +410,13 @@ const Details = [
 
       {
         id: 4,
-        img: '/imgs/simrad',
+        img: '/imgs/simrad.png',
         link: '/imgs/SIMRAD.pdf'
 
       },
-    ]
+    ],
+
+    power: [' Отображение данных по сети NMEA 2000', 'Мультисенсорный цифровой дисплей', ' Независимый контролер управления']
   },
 
   {
@@ -408,7 +427,7 @@ const Details = [
     delivery: 'У каждого производителя сетевые кабели соответствуют мировым стандартам. Цифровые данные от оборудования, подключаемого в единую сеть, передаются по CAN шине по сетевому протоколу NMEA 0183, NMEA 2000. Оборудование, подключённое в единую сеть в, которое передаёт данные не просто цифровые, а с картинкой в видео потоке передаётся по мировому стандарту протоколу ETHERNET. Важно, правильно создать единую сеть на катере и подключить всё оборудование. Без кабелей, переходников, удлинителей это сделать невозможно. Особенно если на катере два поста управления',
     brands:[
       {
-        id:1 ,
+        id:1 ,  
         img:'/imgs/lowrance.svg',
         link: '/imgs/LOWRANCE.pdf'
 
@@ -437,11 +456,13 @@ const Details = [
 
       {
         id:5 ,
-        img:'/imgs/furuno',
+        img:'/imgs/furuno.png',
         link: '/imgs/FURUNO.pdf'
 
       }
-    ]
+    ],
+
+    power : ['']
   },
 
   {

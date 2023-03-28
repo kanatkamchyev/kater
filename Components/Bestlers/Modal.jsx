@@ -12,7 +12,7 @@ import Brands from './Brands'
 
 const Modal = ({ active, setActive, item }) => {
 
-    const { brands, title, description, delivery, } = item
+    const { brands, title, description, delivery, power } = item
 
     return (
         <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
@@ -20,7 +20,7 @@ const Modal = ({ active, setActive, item }) => {
                 <div className={styles.right__modal__content}>
                     <div className={styles.flex__brand}>
                         <div className={styles.flexed__img}>
-                            <Image src={item.img} width='200' height='300'/>
+                            <Image src={item.img} width='200' height='300' />
                         </div>
                         <div className={styles.moda__petrol__content}>
                             <div className={styles.modal__right__title}>
@@ -59,15 +59,15 @@ const Modal = ({ active, setActive, item }) => {
                         </div>
 
                         <div className={styles.about__content__theirgun}>
-                            <div className={styles.content__motor__power}>
-                                Высокая мощность - 800 - 1200 сил
-                            </div>
-                            <div className={styles.content__motor__power}>
-                                Средняя мощность - 450 - 800 сил
-                            </div>
-                            <div className={styles.content__motor__power}>
-                                Низкая мощность -  до 450 сил
-                            </div>
+                            {
+                                power && power.map((sila) => {
+                                    return (
+                                        <div className={styles.content__motor__power}>
+                                            {sila}
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                         <div className={styles.content__modal__call}>
                             <button>Позвонить</button>

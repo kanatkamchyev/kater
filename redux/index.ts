@@ -6,7 +6,7 @@ import  bestlerSlice  from './brestler/reducer'
 const makeStore = () =>
   configureStore({
     reducer: {
-      [bestlerSlice.name]: bestlerSlice.reducer,
+      bestlerSlice
     },
     devTools: true,
   });
