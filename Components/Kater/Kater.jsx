@@ -149,8 +149,17 @@ const Kater = () => {
                                         <KaterPlus />
                                     </div>
                                     <div className={styles.kater__detail} onClick={() => setActiveTrans(true)}>
-                                        <KaterPlus />
-                                        {bestler.name5}
+                                        {
+                                            bestler.name5?.length > 0 ?
+                                            <>
+                                                <KaterPlus />
+                                              {bestler.name5}
+                                            </>
+                                            :
+                                            ''
+                                            
+                                        }
+
                                     </div>
                                 </div>
                             </div>

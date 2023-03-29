@@ -127,7 +127,7 @@
 .about__detail__kater__stadii2 {
     position: absolute;
     display: flex;
-    left: 24%;
+    left: 15%;
     top: 30%;
 }
 
@@ -136,7 +136,7 @@
     position: absolute;
     display: flex;
     gap: 500px;
-    left: 16%;
+    left: 0%;
     bottom: 23%;
 }
 
@@ -421,17 +421,25 @@
 
 @media (max-width:600px) {
 
+    .model_kater_title{
+        font-size: 16px;
+    }
+
+    .model__kater__titledescribe{
+        font-size: 14px;
+    }
+
     .kater__about__lodka img{
         width: 282px;
         height: 262px;
     }
 
     .kater__detail{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .kater__detail1{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .about__detail__kater__stadii3{
@@ -564,13 +572,11 @@
 
     .kater__detail{
         width: auto;
-        font-size: 12px;
     }
 
      .kater__detail1{
         width: auto;
         bottom: 35px;
-        font-size: 12px;
     }
 
     .about__detail__kater__stadii1{

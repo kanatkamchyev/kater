@@ -23,7 +23,7 @@ const HelmDescribe = ({kater, active, setActive}) => {
                 </div>
 
                 <div className={styles.model__kater__describe}>
-                {kater.description5.substr(0,300)}
+                {kater.description5?.substr(0,300)}
                 </div>
                 <div className={styles.model__kater__btn}>
                     <Link href='/Catalog'>
