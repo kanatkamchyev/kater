@@ -37,20 +37,7 @@ const Brands = () => {
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul >
                                         <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href={''}>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href={''}>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href={''}>
-                                            <li>Автопилот <SendCatalog /> </li>
+                                            <li>Подвесные лодочные моторы  <SendCatalog /> </li>
                                         </Link>
                                     </ul>
                                 </div>
@@ -72,20 +59,7 @@ const Brands = () => {
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
                                         <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
+                                            <li>Подвесные лодочные моторы  <SendCatalog /> </li>
                                         </Link>
                                     </ul>
                                 </div>
@@ -136,21 +110,19 @@ const Brands = () => {
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
                                         <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
+                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
+                                            <li>Электронные антенны GPS и компасы <SendCatalog /> </li>
                                         </Link>
 
                                         <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
+                                            <li>Сетевые кабели NMEA 2000 и ETHERNET  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
+                                            <li>Троллинговые электромоторы с GPS якорем <SendCatalog /> </li>
                                         </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
-                                        </Link>
+                                     
                                     </ul>
                                 </div>
                             </div>
@@ -171,20 +143,32 @@ const Brands = () => {
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
                                         <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
+                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
+                                            <li>РЛС/ радары  <SendCatalog /> </li>
                                         </Link>
 
                                         <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
+                                            <li>Автопилоты  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
+                                            <li>Электронные антенны GPS и компасы  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
+                                            <li>Трандюсеры преобразователи датчики эхолота  <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Сетевые кабели NMEA 2000 и ETHERNET   <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Цифровые индикаторные дисплеи  <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Радиостанции и АИС класса B  <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Троллинговые электромоторы с GPS якорем  <SendCatalog /> </li>
                                         </Link>
                                     </ul>
                                 </div>
@@ -203,20 +187,35 @@ const Brands = () => {
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
                                         <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
+                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
+                                            <li>РЛС/ радары  <SendCatalog /> </li>
                                         </Link>
 
                                         <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
+                                            <li>Автопилоты <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
+                                            <li>Электронные антенны GPS и компасы <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
+                                            <li>Трандюсеры преобразователи датчики эхолота <SendCatalog /> </li>
+                                        </Link>
+
+                                        <Link href=''>
+                                            <li>Сетевые кабели NMEA 2000 и ETHERNET  <SendCatalog /> </li>
+                                        </Link>
+
+                                        <Link href=''>
+                                            <li>Цифровые индикаторные дисплеи <SendCatalog /> </li>
+                                        </Link>
+
+                                        <Link href=''>
+                                            <li>Радиостанции и АИС класса B <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Троллинговые электромоторы с GPS якорем<SendCatalog /> </li>
                                         </Link>
                                     </ul>
                                 </div>
@@ -235,20 +234,29 @@ const Brands = () => {
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
                                         <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
+                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
+                                            <li>РЛС/ радары  <SendCatalog /> </li>
                                         </Link>
 
                                         <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
+                                            <li>Автопилоты <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
+                                            <li>Электронные антенны GPS и компасы <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
+                                            <li>Трандюсеры преобразователи датчики эхолота <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Сетевые кабели NMEA 2000 и ETHERNET  <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Цифровые индикаторные дисплеи <SendCatalog /> </li>
+                                        </Link>
+                                        <Link href=''>
+                                            <li>Радиостанции и АИС класса B <SendCatalog /> </li>
                                         </Link>
                                     </ul>
                                 </div>

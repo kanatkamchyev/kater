@@ -24,7 +24,7 @@ const Header = () => {
                         </div>
                      <SideBar activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
                         <div className={activeMenu ? 'header_btn active' : 'header_btn'}>
-                            <Link href='/Contacts'>
+                            <Link href='https://t.me/zakazmangoosemarine'>
                                 <button onClick={()=> setActiveMenu(false)}>Консультация</button>
                             </Link>
                         </div>

@@ -52,64 +52,10 @@
         padding-bottom: 51px;
         margin-top: 108px;
 
-        .res_slide:nth-child(1) {
-            background-image: url('../../assets/img/simrad.png');
-            width: 615px;
-            height: 410px;
+        .res_slide{
+            width: 454px;
             overflow: visible;
             position: relative;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .res_slide:nth-child(2) {
-            background-image: url('../../assets/img/yamaha.png');
-            width: 615px;
-            height: 410px;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .res_slide:nth-child(3) {
-            background-image: url('../../assets/img/marine.png');
-            width: 615px;
-            height: 410px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .res_slide:nth-child(4) {
-            background-image: url('../../assets/img/newray.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 615px;
-            height: 410px;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .res_slide:nth-child(5) {
-            background-image: url('../../assets/img/rance.png');
-            width: 615px;
-            height: 410px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .res_slide:nth-child(6) {
-            background-image: url('../../assets/img/rad.png');
-            width: 615px;
-            height: 410px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
             display: flex;
             align-items: flex-end;
         }

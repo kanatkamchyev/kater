@@ -45,13 +45,8 @@
 
                         }
 
-                        // .brand__first__image:nth-child(1) img{
-                        //     width: 254px;
-                        //     height: 171px;
-                        // }
-
                         .brand__fitst__hovercol {
-                            padding: 70px 0 0 61px;
+                            padding: 70px 0 0 30px;
 
 
                             ul {
@@ -59,15 +54,15 @@
                             }
 
                             ul li {
-                                margin-bottom: 22px;
+                                margin-bottom: 18px;
                                 display: flex;
-                                gap: 22px;
+                                gap: 10px;
                                 align-items: center;
                                 font-family: 'Prompt', sans-serif;
                                 font-style: normal;
-                                font-weight: 600;
-                                font-size: 32px;
-                                line-height: 42px;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 32px;
                                 color: #002656;
                                 cursor: pointer;
                             }
@@ -119,22 +114,22 @@
                         position: relative;
 
                         .brand__fitst__hovercol {
-                            padding: 70px 0 0 61px;
+                            padding: 40px 0 0 61px;
 
                             ul {
                                 display: none;
                             }
 
                             ul li {
-                                margin-bottom: 22px;
+                                margin-bottom: 15px;
                                 display: flex;
-                                gap: 22px;
+                                gap: 10px;
                                 align-items: center;
                                 font-family: 'Prompt', sans-serif;
                                 font-style: normal;
-                                font-weight: 600;
-                                font-size: 32px;
-                                line-height: 42px;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 32px;
                                 color: #002656;
                                 cursor: pointer;
                             }

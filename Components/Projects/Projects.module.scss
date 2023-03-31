@@ -16,6 +16,18 @@
     }
 }
 
+.project__describe {
+    max-width: 877px;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #636363;
+
+}
+
 .project__name {
     margin-top: 40px;
     font-family: 'Prompt', sans-serif;
@@ -26,7 +38,7 @@
     color: #636363;
 }
 
-.close__project{
+.close__project {
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
@@ -44,18 +56,18 @@
 
 
 
-.project__data{
+.project__data {
     margin-top: 157px;
 }
 
-.projects__box{
+.projects__box {
     margin-top: 106px;
     display: flex;
     gap: 36px;
     flex-wrap: wrap;
 }
 
-.project__box__inside{
+.project__box__inside {
     padding: 41px 49px 35px 48px;
 }
 
@@ -66,16 +78,18 @@
     gap: 22px;
 }
 
-.otzyv__imgs{
+.otzyv__imgs {
     display: flex;
     align-items: center;
     gap: 22px;
 }
 
-.project__image{
+.project__image {
     position: relative;
 
-    .img img{
+    .img img {
+        width: 313px;
+        height: 439px;
         border: 1px solid #91BAED;
         border-radius: 125px;
     }

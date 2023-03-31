@@ -111,7 +111,7 @@
 
             img {
                 padding-top: 62px;
-                width: 281px;
+                width: 250px;
                 height: 314px;
                 background-position: center;
                 background-size: cover;
@@ -203,26 +203,51 @@
     }
 }
 
+.all__modal__content {
+    display: flex;
+}
 
+.left__modal__content {
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+}
 
 
 .right__modal__content {
     padding: 39px 30px 38px 80px;
     border: 1px solid hsl(215, 25%, 72%);
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     overflow-y: scroll;
 
 }
 
-.flex__brand{
+.flex__brand {
     display: flex;
     align-items: center;
     gap: 100px;
 }
 
-.flexed__img{
-    padding: 40px 50px;
+.flexed__img {
+
+    img {
+        position: absolute;
+        object-fit: contain;
+        left: 25%;
+        top: 30%;
+    }
+
+    .motorbich {
+        font-family: 'Prompt', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 152px;
+        text-transform: uppercase;
+        line-height: 228px;
+        letter-spacing: 0.13em;
+        color: rgba(145, 186, 237, 0.12);
+    }
 }
 
 .modal__right__title {
@@ -252,6 +277,7 @@
 
 .modal__right__brandimg {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .modal__brand__imgages {
@@ -268,21 +294,20 @@
         justify-content: center;
     }
 
-    .image__xz{
+    .image__xz {
         display: flex;
         justify-content: center;
     }
 
 
 
-    button{
+    button {
         margin-top: 15px;
-        display: none;
         padding: 14px 20px;
         background: #385981;
         cursor: pointer;
 
-        a{
+        a {
             font-family: 'Prompt', sans-serif;
             font-style: normal;
             font-weight: 700;
@@ -294,12 +319,12 @@
     }
 }
 
-.modal__brand__imgages:hover button{
-        display: inline;
+.modal__brand__imgages:hover button {
+    display: inline;
 }
 
 
-.modal__brand__imgages:hover img{
+.modal__brand__imgages:hover img {
     // margin-left: 50px;
 }
 
@@ -359,6 +384,7 @@
 .left__modal__content {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .left__modal__insiders {
@@ -521,6 +547,19 @@
 
 @media(max-width:1465px) {
 
+    .flexed__img .motorbich {
+        font-size: 100px;
+    }
+
+    .flexed__img img{
+        top: 25%;
+        left: 20%;
+    }
+
+    .left__modal__content{
+        width: auto;
+    }
+
 
     .brestler__card__inner {
         width: 300px;
@@ -580,18 +619,12 @@
 
 @media(max-width:1200px) {
 
-    .left__modal__content {
-        height: 40vh;
+    .flexed__img .motorbich{
+        font-size: 72px;
     }
 
-    .motorbichIMG img {
-        width: 200px;
-        height: 270px;
-    }
-
-    .motorbichIMG {
-        bottom: 0;
-        left: 40%;
+    .flexed__img img{
+        left: 10%;
     }
 
     .modal__brand__imgages:nth-child(1) img {
@@ -615,11 +648,29 @@
 
 @media (max-width:820px) {
 
-    .flex__brand{
+    .right__modal__content{
+        height: 65vh;
+    }
+
+    .all__modal__content{
         display: block;
     }
 
-    .flexed__img{
+    .left__modal__content{
+        height: 30vh;
+    }
+
+    .flexed__img img{
+        left: 27%;
+        top: 0;
+        height: 300px;
+    }
+
+    .flex__brand {
+        display: block;
+    }
+
+    .flexed__img {
         display: flex;
         justify-content: center;
     }
@@ -677,11 +728,6 @@
         justify-content: center;
     }
 
-    .left__modal__content img {
-        width: 200px;
-        height: 230px;
-    }
-
     .brestler__cards {
         justify-content: center;
     }
@@ -690,7 +736,11 @@
 
 @media (max-width:550px) {
 
-    .modal__brand__imgages button{
+    .flexed__img img{
+        left: 15%;
+    }
+
+    .modal__brand__imgages button {
         display: inline;
     }
 
@@ -741,6 +791,19 @@
 }
 
 @media (max-width:430px) {
+
+    .left__modal__content{
+        padding: 0;
+    }
+
+
+    .flexed__img img{
+        width: 250px;
+        height: 250px;
+        left: 20%;
+        top: 10%;
+    }
+
     .brestler__card__image .card__image__inner {
         height: 280px;
     }
