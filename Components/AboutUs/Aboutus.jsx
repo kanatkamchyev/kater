@@ -99,10 +99,6 @@ const Aboutus = ({ Bigtitle }) => {
                             </div>
 
                             <div className={styles.about__company__head}>
-                            Eго слова в кружке-
-                            </div>
-
-                            <div className={styles.about__company__head}>
                             «Удовольствие на воде можно получить только тогда, когда чувствуешь, что всё под контролем и ты в безопасности!  За это отвечает оборудование
                             </div>
 
