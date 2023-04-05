@@ -5,7 +5,7 @@ import letter from '../../assets/img/letter_send.svg'
 import { Phone, Message, Locate } from '../../assets/svg/svg'
 import { Facebook, Instagramm, Telegramm, Wc } from '../../assets/svg/svg'
 import xui from '../../assets/img/xuinya.png'
-import hide from '../../assets/img/hidecon.png'
+import hide from '../../assets/img/sosok.svg'
 import styles from '../Contactus/contactus.module.scss'
 import Link from 'next/link'
 
