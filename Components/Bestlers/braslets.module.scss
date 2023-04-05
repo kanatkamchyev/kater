@@ -649,7 +649,7 @@
 @media (max-width:820px) {
 
     .right__modal__content{
-        height: 65vh;
+        height: 40vh;
     }
 
     .all__modal__content{
@@ -657,12 +657,12 @@
     }
 
     .left__modal__content{
-        height: 30vh;
+        height: 55vh;
     }
 
     .flexed__img img{
         left: 27%;
-        top: 0;
+        top: 20%;
         height: 300px;
     }
 
@@ -798,10 +798,10 @@
 
 
     .flexed__img img{
-        width: 200px;
-        height: 200px;
-        left: 25%;
-        top: 10%;
+        // width: 200px;
+        // height: 200px;
+        left: 5%;
+        // top: 10%;
     }
 
     .brestler__card__image .card__image__inner {
@@ -847,9 +847,8 @@
 
 @media (max-width:390px) {
     .flexed__img img{
-        width: 150px;
-        height: 150px;
-        left: 30%;
+        // width: 150px;
+        // height: 150px;
         top: 10%;
     }
 

@@ -17,10 +17,15 @@ import williams from '../../assets/img/williams.svg'
 import { SendCatalog } from '../../assets/svg/svg'
 import styles from '../Brands/brands.module.scss'
 
+import {categories} from '../../Components/FakeObjects'
+import { categoryElements } from '../../Components/FakeObjects'
+import { truncate } from 'fs/promises'
+import { useRouter } from 'next/router'
+import {Details} from '../Bestlers/Bestlers'
 const Brands = () => {
 
-    const [active, setActive] = useState(false)
-
+    const [activeAll, setActiveAll] = useState(true)
+const router = useRouter()
 
     return (
         <div className={styles.Brands}>
@@ -29,151 +34,30 @@ const Brands = () => {
                     Бренды
                 </div>
                 <div className={styles.brand__names}>
-                    <div className={styles.first__column}>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image src={suzuki} alt=""
-                                        width='254'
-                                        height='171'
-                                    />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul >
-                                        <Link href='/Catalog'>
-                                            <li>Подвесные лодочные моторы  <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image src={yamaha} alt=""
-                                        width='346'
-                                        height='195'
-                                    />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Подвесные лодочные моторы  <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image src={mercury} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image className={styles.hum} src={humminbird} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Электронные антенны GPS и компасы <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Сетевые кабели NMEA 2000 и ETHERNET  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Троллинговые электромоторы с GPS якорем <SendCatalog /> </li>
-                                        </Link>
-                                     
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.second__column}>
+                    {
+                        categories.map((item1) => 
+                        
                         <div className={styles.brand__second__col}>
                             <div className={styles.brand__image__style}>
                                 <div className={styles.brand__first__image}>
-                                    <Image className={styles.garmin} src={garmin} alt="" />
+                                    <Image className={styles.garmin} src={item1.category_img} alt="" />
                                 </div>
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
-                                        <Link href={`/Catalog`}>
-                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>РЛС/ радары  <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Автопилоты  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Электронные антенны GPS и компасы  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Трандюсеры преобразователи датчики эхолота  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Сетевые кабели NMEA 2000 и ETHERNET   <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Цифровые индикаторные дисплеи  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радиостанции и АИС класса B  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Троллинговые электромоторы с GPS якорем  <SendCatalog /> </li>
-                                        </Link>
+                                        {
+                                            categoryElements.map((item) => item.categoryId === item1.id ? 
+                                            
+                                            <div 
+                                            
+                                            onClick={() => {
+                                                router.push({
+                                                  pathname: '/Catalog/',
+                                                  query: { activeAll: true, id: item.id},
+                                                })
+                                            }}>
+                                            <li>{item.title} <SendCatalog /> </li>
+                                        </div>: null)
+                                        }
                                     </ul>
                                 </div>
                             </div>
@@ -183,226 +67,9 @@ const Brands = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className={styles.brand__second__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image className={styles.low} src={lowrance} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>РЛС/ радары  <SendCatalog /> </li>
-                                        </Link>
 
-                                        <Link href=''>
-                                            <li>Автопилоты <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Электронные антенны GPS и компасы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Трандюсеры преобразователи датчики эхолота <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Сетевые кабели NMEA 2000 и ETHERNET  <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Цифровые индикаторные дисплеи <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Радиостанции и АИС класса B <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Троллинговые электромоторы с GPS якорем<SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__second__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image className={styles.ray} src={raymarine} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>РЛС/ радары  <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Автопилоты <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Электронные антенны GPS и компасы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Трандюсеры преобразователи датчики эхолота <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Сетевые кабели NMEA 2000 и ETHERNET  <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Цифровые индикаторные дисплеи <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радиостанции и АИС класса B <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.first__column}>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image className={styles.williams} src={williams} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image src={opacmare} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image src={seak} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                        <div className={styles.brand__fitst__col}>
-                            <div className={styles.brand__image__style}>
-                                <div className={styles.brand__first__image}>
-                                    <Image src={thermo} alt="" />
-                                </div>
-                                <div className={styles.brand__fitst__hovercol}>
-                                    <ul>
-                                        <Link href='/Catalog'>
-                                            <li>Моторы <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Радары <SendCatalog /> </li>
-                                        </Link>
-
-                                        <Link href=''>
-                                            <li>Кондиционер <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Интерцептор <SendCatalog /> </li>
-                                        </Link>
-                                        <Link href=''>
-                                            <li>Автопилот <SendCatalog /> </li>
-                                        </Link>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.brand__hidden__sender}>
-                                <Link href='/Catalog'>
-                                    <SendCatalog />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    }
                 </div>
 
             </div>

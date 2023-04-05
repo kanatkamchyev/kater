@@ -15,160 +15,51 @@
             color: #3D3D3D;
         }
 
-        .brand__names {
+        .brand__names{
             margin-top: 30px;
-            border: 1px solid #A6B5CA;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-            .first__column {
-                display: flex;
-
-
-                .brand__fitst__col {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 454px;
-                    height: 449px;
-                    border: 1px solid #A6B5CA;
-
-                    .brand__hidden__sender {
-                        display: none;
-
-                    }
-
-                    .brand__image__style {
-
-                        .brand__first__image {
-                            display: flex;
-                            justify-content: center;
+    }
+}
 
 
-                        }
 
-                        .brand__fitst__hovercol {
-                            padding: 70px 0 0 30px;
+.brand__second__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 454px;
+    height: 449px;
+    border: 1px solid #A6B5CA;
 
+    .brand__fitst__hovercol{
+        display: none;
 
-                            ul {
-                                display: none;
-                            }
-
-                            ul li {
-                                margin-bottom: 18px;
-                                display: flex;
-                                gap: 10px;
-                                align-items: center;
-                                font-family: 'Prompt', sans-serif;
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 18px;
-                                line-height: 32px;
-                                color: #002656;
-                                cursor: pointer;
-                            }
-
-                            ul li:hover {
-                                color: #2a96cd;
-                            }
-
-                            ul li:hover svg path {
-                                fill: #2a96cd;
-                            }
-
-                        }
-                    }
-
-
-                }
-
-                .brand__fitst__col:hover {
-                    justify-content: start;
-                    align-items: flex-start;
-                }
-
-                .brand__fitst__col:hover .brand__image__style img {
-                    display: none;
-                }
-
-                .brand__fitst__col:hover .brand__fitst__hovercol ul {
-                    display: inline;
-                }
-            }
-
-            .second__column {
-                display: flex;
-
-                .brand__second__col {
-                    border: 1px solid #A6B5CA;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 605px;
-                    height: 512px;
-
-                    .brand__hidden__sender {
-                        display: none;
-                    }
-
-                    .brand__image__style {
-                        position: relative;
-
-                        .brand__fitst__hovercol {
-                            padding: 40px 0 0 61px;
-
-                            ul {
-                                display: none;
-                            }
-
-                            ul li {
-                                margin-bottom: 15px;
-                                display: flex;
-                                gap: 10px;
-                                align-items: center;
-                                font-family: 'Prompt', sans-serif;
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 18px;
-                                line-height: 32px;
-                                color: #002656;
-                                cursor: pointer;
-                            }
-
-                            ul li:hover {
-                                color: #2a96cd;
-                            }
-
-                            ul li:hover svg path {
-                                fill: #2a96cd;
-                            }
-
-                        }
-
-                        .brand__first__image {
-                            display: flex;
-                            justify-content: center;
-
-
-                        }
-                    }
-                }
-
-                .brand__second__col:hover .brand__image__style img {
-                    display: none;
-                }
-
-                .brand__second__col:hover {
-                    justify-content: start;
-                    align-items: flex-start;
-                }
-
-                .brand__second__col:hover .brand__fitst__hovercol ul {
-                    display: inline;
-                }
-
-            }
+        ul li{
+            display: flex;
+            gap:10px;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 18px;
+            cursor: pointer;
         }
     }
+
+    .brand__hidden__sender{
+        display: none;
+    }
+
+}
+
+.brand__second__col:hover .brand__fitst__hovercol{
+    display: inline;
+}
+
+.brand__second__col:hover .brand__first__image{
+    display: none;
 }
 
 
@@ -246,13 +137,13 @@
         display: inline;
     }
 
-    .brand__inner .brand__names .first__column  .brand__fitst__col:hover {
+    .brand__inner .brand__names .first__column .brand__fitst__col:hover {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .brand__inner .brand__names .second__column  .brand__second__col:hover {
+    .brand__inner .brand__names .second__column .brand__second__col:hover {
         display: flex;
         justify-content: center;
         align-items: center;
