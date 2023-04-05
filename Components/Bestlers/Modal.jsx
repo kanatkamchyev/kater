@@ -2,20 +2,17 @@ import React from 'react'
 import Image from 'next/image'
 
 
-import suzuki from '../../assets/img/suzuki.svg'
-import yamaha from '../../assets/img/yamaha.svg'
-import mercury from '../../assets/img/mercury.svg'
 import { ClosePopUp } from '../../assets/svg/svg'
 import styles from '../Bestlers/braslets.module.scss'
 import Brands from './Brands'
 
 
-const Modal = ({ active, setActive, item }) => {
+const Modal = ({ active, setActive, item, HandleClick }) => {
 
     const { brands, title, description, delivery, power } = item
 
     return (
-        <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
+        <div className={active ? "modal active" : "modal"} onClick={HandleClick}>
             <div className={active ? "modal__content active" : "modal__content"} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.all__modal__content}>
                     <div className={styles.left__modal__content}>
@@ -84,7 +81,7 @@ const Modal = ({ active, setActive, item }) => {
                     </div>
                 </div>
 
-                <div className={styles.modal__content__closes} onClick={() => setActive(false)}>
+                <div className={styles.modal__content__closes} onClick={HandleClick}>
                     <ClosePopUp />
                 </div>
             </div>

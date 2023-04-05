@@ -9,10 +9,13 @@ import { More } from '../../assets/svg/svg'
 import { setCurrentBestler } from '../../redux/brestler/reducer'
 import styles from '../Bestlers/braslets.module.scss'
 import Modal from './Modal'
+import useScrollBlock from './ScrollBlock'
 
 
 
 const Cart = ({ item }) => {
+
+    const [isLocked, toggle] = useScrollBlock()
 
     const [active, setActive] = useState(false)
     const dispatch = useDispatch();
@@ -21,6 +24,11 @@ const Cart = ({ item }) => {
     useEffect(() => {
         dispatch(setCurrentBestler(item))
     }, [])
+
+    const HandleClick = () => {
+        setActive(!active)
+        toggle()
+    }
 
 
     return (
@@ -42,22 +50,20 @@ const Cart = ({ item }) => {
 
                         }
                     </div>
-                    <div className={styles.brestler__card__info} onClick={() => setActive(true)}>
+                    <div className={styles.brestler__card__info} onClick={HandleClick}>
                         Инфо <More />
                     </div>
                 </div>
 
                 <div className={styles.brestler__card__title}>
-                    {item.title.substr(0,40)}
+                    {item.title.substr(0, 40)}
                 </div>
                 <div className={styles.brestler__card__btn}>
                     <Link href='/Contacts'>
-                    <button>Позвонить</button>
+                        <button>Позвонить</button>
                     </Link>
                 </div>
-
-                <Modal active={active} setActive={setActive} item={item} />
-
+                <Modal active={active} setActive={setActive} item={item} HandleClick={HandleClick}/>
             </div>
         </div>
 

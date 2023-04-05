@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -18,6 +18,10 @@ import { SendCatalog } from '../../assets/svg/svg'
 import styles from '../Brands/brands.module.scss'
 
 const Brands = () => {
+
+    const [active, setActive] = useState(false)
+
+
     return (
         <div className={styles.Brands}>
             <div className={styles.brand__inner}>
@@ -142,7 +146,7 @@ const Brands = () => {
                                 </div>
                                 <div className={styles.brand__fitst__hovercol}>
                                     <ul>
-                                        <Link href='/Catalog'>
+                                        <Link href={`/Catalog`}>
                                             <li>Картплоттеры /эхолоты  <SendCatalog /> </li>
                                         </Link>
                                         <Link href=''>

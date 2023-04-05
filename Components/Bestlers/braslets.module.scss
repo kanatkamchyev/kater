@@ -798,9 +798,9 @@
 
 
     .flexed__img img{
-        width: 250px;
-        height: 250px;
-        left: 20%;
+        width: 200px;
+        height: 200px;
+        left: 25%;
         top: 10%;
     }
 
@@ -842,5 +842,15 @@
         left: 25%;
     }
 
-
 }
+
+
+@media (max-width:390px) {
+    .flexed__img img{
+        width: 150px;
+        height: 150px;
+        left: 30%;
+        top: 10%;
+    }
+
+}   
