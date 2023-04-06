@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { SendCatalog } from '../../assets/svg/svg'
+import { ClosePopUp, SendCatalog } from '../../assets/svg/svg'
 import { setCurrentBestler } from '../../redux/brestler/reducer'
 
 
@@ -32,9 +32,20 @@ const AboutBrandMore = ({ item1 }) => {
                                     })
                                 }}>
                                 <li>{item.title} <SendCatalog /> </li>
-                            </div> : null)
+                            </div>
+                            
+                            : null)
                     }
                 </ul>
+                {
+                    active ?
+                    <div className={styles.closed__modalka} onClick={() => setActive(false)}>
+                        <ClosePopUp/>
+                    </div>
+                    :
+                    null
+
+                }
             </div>
             <div className={styles.brand__hidden__sender} onClick={() => setActive(!active)}>
                 <div>

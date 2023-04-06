@@ -234,7 +234,7 @@
     img {
         position: absolute;
         object-fit: contain;
-        left: 25%;
+        left: 30%;
         top: 30%;
     }
 
@@ -846,6 +846,7 @@
 
 
 @media (max-width:390px) {
+
     .flexed__img img{
         top: 10%;
     }
