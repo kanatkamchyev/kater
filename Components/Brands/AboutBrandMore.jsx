@@ -16,29 +16,33 @@ const AboutBrandMore = ({ item1 }) => {
 
 
     return (
-        <div className={styles.brand__fitst__hovercol}>
-            <ul className={active ? styles.hidden__motors_active : styles.hidden__motors}>
-                {
-                    categoryElements.map((item) => item.categoryId === item1.id ?
+        <>
 
-                        <div
+            <div className={active ? styles.brand__fitst__hovercol_active : styles.brand__fitst__hovercol}>
+                <ul className={active ? styles.hidden__motors_active : styles.hidden__motors}>
+                    {
+                        categoryElements.map((item) => item.categoryId === item1.id ?
 
-                            onClick={() => {
-                                router.push({
-                                    pathname: '/Catalog/',
-                                    query: { activeAll: true, id: item.id },
-                                })
-                            }}>
-                            <li>{item.title} <SendCatalog /> </li>
-                        </div> : null)
-                }
-            </ul>
+                            <div
+                                className={active ? styles.itsBitch_active : styles.itsBitch}
+                                onClick={() => {
+                                    router.push({
+                                        pathname: '/Catalog/',
+                                        query: { activeAll: true, id: item.id },
+                                    })
+                                }}>
+                                <li>{item.title} <SendCatalog /> </li>
+                            </div> : null)
+                    }
+                </ul>
+            </div>
             <div className={styles.brand__hidden__sender} onClick={() => setActive(!active)}>
                 <div>
                     <SendCatalog />
                 </div>
             </div>
-        </div>
+        </>
+
     )
 }
 
