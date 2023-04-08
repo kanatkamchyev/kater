@@ -16,7 +16,8 @@
     }
 
     &__title {
-        border-bottom: 1px solid #A6B5CA;
+        border: 1px solid #A6B5CA;
+        border-bottom: 0;
 
         p {
             padding: 32px 0 28px 71px;
@@ -178,6 +179,7 @@
 .kater__about__lodka {
     display: flex;
     justify-content: center;
+    border: 1px solid #A6B5CA;
 
     img {
         object-fit: cover;
@@ -493,6 +495,15 @@
 
 @media (max-width:500px) {
 
+    .kater__title{
+        border-bottom: 1px solid #A6B5CA;
+        margin-bottom: 20px;
+    }
+
+    .kater__about__lodka{
+        border: none;
+    }
+
     .kater__names .kater__box .kater__box__image img {
         height: 200px;
     }
@@ -530,8 +541,9 @@
     }
 
     .kater {
+        
         &__title p {
-            padding: 32px;
+            padding: 15px 25px;
             font-size: 32px;
             line-height: 32px;
         }
