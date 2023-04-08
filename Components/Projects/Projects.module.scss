@@ -145,8 +145,8 @@
     .project__image {
     
         .img img {
-            width: 213px;
-            height: 339px;
+            width: 283px;
+            height: 389px;
         }
     }
 
@@ -166,6 +166,11 @@
     .otzyv{
         gap: 6px;
         font-size: 20px;
+        padding: 18px 19px;
+
+        svg{
+            width: 30px;
+        }
     }
     
 }
@@ -179,7 +184,7 @@
 
     .project__box {
         width: 354px;
-        height: 500px;
+        height: 520px;
     }
 
     .otzyv__avito{

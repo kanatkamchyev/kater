@@ -233,6 +233,15 @@
 }
 
 @media(max-width:420px){
+
+    .swiper_nav_bars {
+        margin-top: 5px;
+        gap: 20px;
+    button{
+        padding: 8px 12px;
+    }
+}
+
     .work__head__left{
         font-size: 20px;
     }

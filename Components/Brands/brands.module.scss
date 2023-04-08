@@ -34,7 +34,6 @@
     width: 454px;
     height: 449px;
     border: 1px solid #A6B5CA;
-
     .brand__fitst__hovercol_active {
         padding: 0 20px;
         width: 100vw;
@@ -49,15 +48,32 @@
         align-items: center;
         left: 0;
         z-index: 999;
+        overflow-y: scroll;
+
 
         .hidden__motors_active {
+            margin-top: 80px;
+
             li {
                 display: flex;
-                gap: 7px;
+                gap: 20px;
                 align-items: center;
                 margin-bottom: 20px;
-                font-size: 18px;
+                font-size: 16px;
                 cursor: pointer;
+
+                svg{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            li:hover{
+                color: #2A96CD;
+            }
+
+            li:hover svg path{
+                fill: #2A96CD;
             }
         }
 
@@ -65,14 +81,30 @@
 
     .brand__fitst__hovercol .hidden__motors {
         display: none;
+        overflow-y: scroll;
+
         li {
             display: flex;
             padding: 0 20px;
-            gap: 10px;
+            gap: 22px;
+            margin-bottom: 22px;
             align-items: center;
-            margin-bottom: 10px;
-            font-size: 18px;
+            font-size: 32px;
             cursor: pointer;
+            color: #002656;
+
+            svg{
+                width: 20px ;
+                height: 20px ;
+            }
+        }
+
+        li:hover{
+            color: #2A96CD;
+        }
+
+        li:hover svg path{
+            fill: #2A96CD;
         }
     }
 
@@ -103,6 +135,12 @@
         width: 30px;
         height: 30px;
     }
+}
+
+.brand__second__col:hover {
+    align-items: flex-start;
+    padding-top: 20px;
+    overflow-y: scroll;
 }
 
 .brand__second__col:hover .brand__fitst__hovercol .hidden__motors {
@@ -226,6 +264,12 @@
         display: inline;
     }
 
+    .brand__second__col:hover {
+        padding-top: 0;
+        align-items: center;
+        overflow: hidden;
+    }
+
 
 
 }
@@ -260,7 +304,7 @@
             .hidden__motors_active {
                 li {
                     font-size: 16px;
-                    margin-bottom: 8px;
+                    margin-bottom: 20px;
                 }
             }
         }

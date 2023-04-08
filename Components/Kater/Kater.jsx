@@ -46,7 +46,7 @@ const Katers = [
         description2: 'Автопилот – предназначен для районов плавания, на акваториях, где нет поворотов и извилистых участков. Обычно автопилоты применяют на океанах, морях, больших озёрах, водохранилищах. Судоводитель задаёт курс автопилоту и судно идёт по заданному курсу. Судоводитель в это время может заниматься своими делами, не нужно держать штурвал руками. Автопилот, не сможет обойти препятствие если оно появится еа заданном курсе, поэтому судоводитель всегда должен это понимать не отходить на долго от штурвала. Автопилот удачное решение для комфортного пребывания на воде.',
         name3: ' Интерцепторы',
         description3: 'с помощью мультисенсорного дисплея, вы можете выбирать наиболее важную информацию о судне с любого устройства на борту, подключенного к NMEA 2000®. К ним относятся число оборотов в минуту, скорость относительно земли, скорость ветра, скорость относительно воды, уровень топлива, триммер, давление масла, количество моточасов, расход топлива, экономия топлива и температура.  Может работать, как автономный приборный дисплей и контроллер автопилота на борту небольших судов.',
-        name4: ' Система кондиционирования. -',
+        name4: ' Система кондиционирования.',
         description4: 'Преобразователи, трандьюсеры это незаменимый помощник любому судоводителю, датчики отображают глубину, температуру, скорость относительно воды, рельеф и структуру дна в проекциях 2D и 3D, а также сетевые преобразователи, которые работают по сети NMEA 2000. Технологии развиваются и сейчас появились трандьюсеры в режиме реального времени, Вы можете видеть, что происходит под водой с помощью систем Live Scope™, PANOTIX, ACTIV TARGET.  Для безопасного подхода к незнакомым участкам во избежание попадания судна на мель применяют вперёдсмотрящие датчики FORWARD SCAN.  Датчики –делятся на категории: врезные в корпус, вклеиваемые, транцевые устанавливаются на транец судна.  По материалу преобразователи бывают пластиковые, бронзовые, нержавеющая сталь.',
         name5: 'Подвесной бензиновый мотор.',
         description5: 'Созданы для того, чтобы приносить людям  радость, комфорт и удовлетворение , когда они находятся на воде. Скорость  на воде за неё отвечает двигатель, который разгонит Ваш катер  до 80/100 км/ч. Скорость на воде ощущается совершенно по другому. Современные двигатели бывают 2-х тактные и 4-х тактные. 4-х тактные более экономичны и мощнее. Мощность двигателя у некоторых моделей может доходить до 450 л.с.',
@@ -121,43 +121,55 @@ const Kater = () => {
                                 </div>
                                 <div className={styles.about__detail__kater__stadii1}>
                                     <div className={styles.kater__detail} onClick={() => setActiveHelm(true)}>
-                                        {bestler.name}
+                                        <div className={styles.kater__kotakbas}>
+                                            {bestler.name}
+                                        </div>
                                         <KaterPlus />
                                     </div>
                                     <div className={styles.kater__detail1} onClick={() => setActiveRadarer(true)}>
                                         <KaterPlus />
-                                        {bestler.name1}
+                                        <div className={styles.kater__kotakbas}>
+                                            {bestler.name1}
+                                        </div>
                                     </div>
                                     <div className={styles.interegation__modal}>
                                         <div className={styles.kater__detail} onClick={() => setActiveRadar(true)}>
                                             <KaterPlus />
-                                            {bestler.name2}
+                                            <div className={styles.kater__kotakbas}>
+                                                {bestler.name2}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className={styles.about__detail__kater__stadii2} >
                                     <div className={styles.kater__detail}>
-                                        {bestler.name3}
+                                        <div className={styles.kater__kotakbas}>
+                                            {bestler.name3}
+                                        </div>
                                         <KaterPlus />
                                     </div>
                                 </div>
 
                                 <div className={styles.about__detail__kater__stadii3}>
                                     <div className={styles.kater__detail} onClick={() => setActiveMotor(true)}>
-                                        {bestler.name4}
+                                        <div className={styles.kater__kotakbas}>
+                                            {bestler.name4}
+                                        </div>
                                         <KaterPlus />
                                     </div>
                                     <div className={styles.kater__detail} onClick={() => setActiveTrans(true)}>
                                         {
                                             bestler.name5?.length > 0 ?
-                                            <>
-                                                <KaterPlus />
-                                              {bestler.name5}
-                                            </>
-                                            :
-                                            ''
-                                            
+                                                <>
+                                                    <KaterPlus />
+                                                    <div className={styles.kater__kotakbas}>
+                                                        {bestler.name5}
+                                                    </div>
+                                                </>
+                                                :
+                                                ''
+
                                         }
 
                                     </div>
@@ -166,6 +178,9 @@ const Kater = () => {
                             <div className={styles.kater__about__lodka}>
                                 <Image src={lodka} alt="" />
                             </div>
+                            <div className={styles.toBack__icon__kater_ac} onClick={() => setActiveKater(false)}>
+                                <button><KaterBack/> Выбор катеров и яхт</button>
+                                </div>
                             <KaterDescribe kater={bestler} active={activeRadar} setActive={setActiveRadar} />
                             <TransDescribe kater={bestler} active={activeTrans} setActive={setActiveTrans} />
                             <HelmDescribe kater={bestler} active={activeHelm} setActive={setActiveHelm} />
