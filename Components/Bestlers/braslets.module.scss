@@ -807,6 +807,7 @@
 
     .brestler__card__image .card__image__inner {
         height: 280px;
+        align-items: center;
     }
 
     .modal__right__title {
@@ -822,9 +823,9 @@
     }
 
     .brestler__card__image .card__image__inner img {
-        padding-top: 30px;
-        width: 230px;
-        height: 260px;
+        padding-top: 0px;
+        max-width: 230px;
+        max-height: 160px;
     }
 
     .brestler__card__image {

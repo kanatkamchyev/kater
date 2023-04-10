@@ -108,7 +108,7 @@ const Kater = () => {
     return (
         <div className={styles.Kater}>
             <div className={activeKater ? styles.kater__inner_active : styles.kater__inner}>
-                <div className={styles.kater__title}>
+                <div className={activeKater? styles.kater__title_active : styles.kater__title}>
                     <p>Визуальный подбор деталей</p>
                 </div>
 
