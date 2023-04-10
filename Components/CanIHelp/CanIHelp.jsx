@@ -10,6 +10,7 @@ import boat from "./assets/svg/boat_icon.svg";
 import kater from '../../assets/img/parih.png'
 import home_bg from "./assets/svg/home_bg.svg";
 import styles from '../CanIHelp/help.module.scss'
+import Link from "next/link";
 
 export const CanIHelp = () => {
 
@@ -53,11 +54,14 @@ export const CanIHelp = () => {
                     </SwiperSlide>
                   </Swiper>
                 </div>
+                <Link href='/Catalog'>
                 <div className={styles.home_catalog_class}>
                   <div className={styles.home_catalog}>
                     Каталог
                   </div>
                 </div>
+                </Link>
+
               </div>
 
               <div className={styles.home__swiper__btn}>
