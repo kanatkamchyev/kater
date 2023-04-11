@@ -609,6 +609,11 @@
 
 @media (max-width:450px) {
 
+    .kater__title{
+        border: none;
+        border-bottom: 0.5px solid #A6B5CA;
+    }
+
     .toBack__icon__kater{
         display: none;
     }

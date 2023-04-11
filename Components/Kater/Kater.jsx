@@ -129,7 +129,7 @@ const Kater = () => {
                                     <div className={styles.kater__detail1} onClick={() => setActiveRadarer(true)}>
                                         <KaterPlus />
                                         <div className={styles.kater__kotakbas}>
-                                            {bestler.name1}
+                                            {bestler.name1.substr(0,20)}
                                         </div>
                                     </div>
                                     <div className={styles.interegation__modal}>
@@ -145,7 +145,7 @@ const Kater = () => {
                                 <div className={styles.about__detail__kater__stadii2} >
                                     <div className={styles.kater__detail}>
                                         <div className={styles.kater__kotakbas}>
-                                            {bestler.name3}
+                                            {bestler.name3.substr(0,20)}
                                         </div>
                                         <KaterPlus />
                                     </div>
@@ -154,7 +154,7 @@ const Kater = () => {
                                 <div className={styles.about__detail__kater__stadii3}>
                                     <div className={styles.kater__detail} onClick={() => setActiveMotor(true)}>
                                         <div className={styles.kater__kotakbas}>
-                                            {bestler.name4}
+                                            {bestler.name4.substr(0,15)}
                                         </div>
                                         <KaterPlus />
                                     </div>
@@ -164,7 +164,7 @@ const Kater = () => {
                                                 <>
                                                     <KaterPlus />
                                                     <div className={styles.kater__kotakbas}>
-                                                        {bestler.name5}
+                                                        {bestler.name5.substr(0,20)}
                                                     </div>
                                                 </>
                                                 :
