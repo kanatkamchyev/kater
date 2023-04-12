@@ -31,10 +31,10 @@ const AboutBrandMore = ({ item1 }) => {
                                         query: { activeAll: true, id: item.id },
                                     })
                                 }}>
-                                <li>{item.title} <SendCatalog /> </li>
+                                <li>{item.title}<SendCatalog /></li>
                             </div>
                             
-                            : null)
+                        : null)
                     }
                 </ul>
                 {

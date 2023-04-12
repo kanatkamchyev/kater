@@ -21,7 +21,6 @@ const Details = [
     id: 2,
     img: '/imgs/varka.png',
     title: 'Тролинговые GPS моторы',
-
   },
 
   {
@@ -42,7 +41,6 @@ const Details = [
     id: 5,
     img: '',
     title: 'Картплоттеры с  NMEA /ETHERNET',
-
   },
 
 ]

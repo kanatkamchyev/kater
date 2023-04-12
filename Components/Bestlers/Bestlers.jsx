@@ -404,7 +404,7 @@ export const Details = [
 
       {
         id:3,
-        img: '/imgs/raymaine.svg',
+        img: '/imgs/raymarine.svg',
         link: '/imgs/RAYMARINE.pdf'
 
       },
