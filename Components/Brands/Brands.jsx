@@ -3,17 +3,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-
-import { SendCatalog } from '../../assets/svg/svg'
 import styles from '../Brands/brands.module.scss'
 import AboutBrandMore from './AboutBrandMore'
-import { categories } from '../../Components/FakeObjects'
-import { truncate } from 'fs/promises'
+import { categories } from '../FakeObjects'
 import { useRouter } from 'next/router'
-import { Details } from '../Bestlers/Bestlers'
+
 const Brands = () => {
 
-    const router = useRouter()
 
     return (
         <div className={styles.Brands}>
