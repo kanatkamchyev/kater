@@ -10,6 +10,7 @@ import styles from '../ForWork/forwork.module.scss'
 import more from '../../assets/img/seemore.svg'
 import SwiperButtons from './SwiperButtons'
 import ProjectBox from '../Projects/ProjectBox'
+import Link from 'next/link'
 
 
 
@@ -85,22 +86,11 @@ const Forwork = () => {
             <p>выполненные проекты</p>
           </div>
           <div className={styles.work__head__right}>
-            {
-              seeMore ?
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ducimus ratione in enim illum nam adipisci fugit ad praesentium error maxime aliquid, temporibus omnis, alias voluptatem officiis unde labore fuga?</p>
-                :
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ducimus ratione in enim illum nam adipisci fugit ad praesentium error maxime </p>
+                <Link href="/OurProjects">
+                <p className={styles.work__seemore}>увидеть больше <Image src={more} alt="" /></p>
+                </Link>
 
-
-            }
-            {
-              seeMore ?
-                <p className={styles.work__seemore} onClick={() => setSeeMore(!seeMore)}>Скрыть...</p>
-
-                :
-                <p className={styles.work__seemore} onClick={() => setSeeMore(!seeMore)}>увидеть больше <Image src={more} alt="" /></p>
-
-            }
           </div>
         </div>
 

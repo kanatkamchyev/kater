@@ -31,7 +31,7 @@ const AboutBrandMore = ({ item1 }) => {
                                         query: { activeAll: true, id: item.id },
                                     })
                                 }}>
-                                <li>{item.title}<SendCatalog /></li>
+                                <li>{item.title.substr(0, 23)}<SendCatalog /></li>
                             </div>
                             
                         : null)

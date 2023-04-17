@@ -20,6 +20,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            border: 0.5px solid #A6B5CA;
         }
 
     }
@@ -31,9 +32,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 454px;
+    width: 453.6px;
     height: 449px;
-    border: 1px solid #A6B5CA;
+    border: 0.5px solid #A6B5CA;
     .brand__fitst__hovercol_active {
         padding: 0 20px;
         width: 100vw;
@@ -89,7 +90,7 @@
             gap: 22px;
             margin-bottom: 22px;
             align-items: center;
-            font-size: 32px;
+            font-size: 26px;
             cursor: pointer;
             color: #002656;
 
@@ -180,6 +181,12 @@
         width: 100%;
         gap: 10px;
     }
+
+   .brand__inner{
+    .brand__names{
+        border: none;
+    }
+   }
 
     .brand__second__col {
         width: 49%;
