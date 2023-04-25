@@ -1,13 +1,10 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
 import { ClosePopUp, SendCatalog } from '../../assets/svg/svg'
-import { setCurrentBestler } from '../../redux/brestler/reducer'
 
 
 import { categoryElements } from '../../Components/FakeObjects'
 import styles from '../Brands/brands.module.scss'
-import BrandModal from './BrandModal'
 
 const AboutBrandMore = ({ item1 }) => {
 

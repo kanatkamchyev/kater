@@ -29,249 +29,253 @@ export const categoryElements = [
 
 
     {
-        id: 2,
+        id: 4,
         title: 'Картплоттеры /эхолоты',
         categoryId: 3,
     },
     {
-        id: 2,
+        id: 5,
         title: 'РЛС/ радары',
         categoryId: 3,
     },
     {
-        id: 2,
-        title: 'Автопилоты',
-        categoryId: 3,
-    },
-    {
-        id: 2,
-        title: 'Электронные антенны GPS и компасы ',
-        categoryId: 3,
-    },
-    {
-        id: 2,
-        title: 'Трандюсеры преобразователи датчики эхолота',
-        categoryId: 3,
-    },
-    {
-        id: 2,
-        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
-        categoryId: 3,
-    },
-    {
-        id: 2,
-        title: 'Цифровые индикаторные дисплеи',
-        categoryId: 3,
-    },
-    {
-        id: 2,
-        title: 'Радиостанции и АИС класса B',
-        categoryId: 3,
-    },
-    {
-        id: 2,
-        title: 'Троллинговые электромоторы с GPS якорем',
-        categoryId: 3,
-    },
-
-
-
-
-
-    {
-        id: 8,
-        title: 'Картплоттеры /эхолоты',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'РЛС/ радары',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'Автопилоты',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'Электронные антенны GPS и компасы ',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'Трандюсеры преобразователи датчики эхолота',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'Цифровые индикаторные дисплеи',
-        categoryId: 4,
-    },
-    {
-        id: 8,
-        title: 'Радиостанции и АИС класса B',
-        categoryId: 4,
-    },
-
-
-
-
-
-
-
-    {
-        id: 4,
-        title: 'Картплоттеры /эхолоты',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'РЛС/ радары',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Автопилоты',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Электронные антенны GPS и компасы ',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Трандюсеры преобразователи датчики эхолота',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Цифровые индикаторные дисплеи',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Радиостанции и АИС класса B',
-        categoryId: 5,
-    },
-    {
-        id: 4,
-        title: 'Троллинговые электромоторы с GPS якорем',
-        categoryId: 5,
-    },
-
-
-
-
-
-
-
-    {
-        id: 6,
-        title: 'Картплоттеры /эхолоты',
-        categoryId: 6,
-    },
-    {
-        id: 6,
-        title: 'РЛС/ радары',
-        categoryId: 6,
-    },
-    {
         id: 6,
         title: 'Автопилоты',
-        categoryId: 6,
+        categoryId: 3,
     },
-    {
-        id: 6,
-        title: 'Электронные антенны GPS и компасы ',
-        categoryId: 6,
-    },
-    {
-        id: 6,
-        title: 'Трандюсеры преобразователи датчики эхолота',
-        categoryId: 6,
-    },
-    {
-        id: 6,
-        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
-        categoryId: 6,
-    },
-    {
-        id: 6,
-        title: 'Цифровые индикаторные дисплеи',
-        categoryId: 6,
-    },
-    {
-        id: 6,
-        title: 'Радиостанции и АИС класса B',
-        categoryId: 6,
-    },
-    {
-        id: 6,
-        title: 'Троллинговые электромоторы с GPS якорем',
-        categoryId: 6,
-    },
-
-
-
-
-
-
-
-    {
-        id: 5,
-        title: 'Картплоттеры /эхолоты',
-        categoryId: 7,
-    },
-    {
-        id: 5,
-        title: 'Электронные антенны GPS и компасы ',
-        categoryId: 7,
-    },
-    {
-        id: 5,
-        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
-        categoryId: 7,
-    },
-    {
-        id: 5,
-        title: 'Троллинговые электромоторы с GPS якорем',
-        categoryId: 7,
-    },
-
-
-
-
-
-
     {
         id: 7,
+        title: 'Электронные антенны GPS и компасы ',
+        categoryId: 3,
+    },
+    {
+        id: 2,
+        title: 'Трандюсеры преобразователи датчики эхолота',
+        categoryId: 3,
+    },
+    {
+        id: 11,
+        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
+        categoryId: 3,
+    },
+
+    {
+        id: 10,
+        title: 'Цифровые индикаторные дисплеи',
+        categoryId: 3,
+    },
+    {
+        id: 8,
+        title: 'Радиостанции и АИС класса B',
+        categoryId: 3,
+    },
+    {
+        id: 2,
+        title: 'Троллинговые электромоторы с GPS якорем',
+        categoryId: 3,
+    },
+
+
+
+
+
+    {
+        id: 4,
+        title: 'Картплоттеры /эхолоты',
+        categoryId: 4,
+    },
+    {
+        id: 5,
+        title: 'РЛС/ радары',
+        categoryId: 4,
+    },
+    {
+        id: 6,
+        title: 'Автопилоты',
+        categoryId: 4,
+    },
+    {
+        id: 7,
+        title: 'Электронные антенны GPS и компасы ',
+        categoryId: 4,
+    },
+    {
+        id: 4,
+        title: 'Трандюсеры преобразователи датчики эхолота',
+        categoryId: 4,
+    },
+    {
+        id: 9,
+        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
+        categoryId: 4,
+    },
+    {
+        id: 10,
+        title: 'Цифровые индикаторные дисплеи',
+        categoryId: 4,
+    },
+    {
+        id: 8,
+        title: 'Радиостанции и АИС класса B',
+        categoryId: 4,
+    },
+
+
+
+
+
+
+
+    {
+        id: 4,
+        title: 'Картплоттеры /эхолоты',
+        categoryId: 5,
+    },
+    {
+        id: 5,
+        title: 'РЛС/ радары',
+        categoryId: 5,
+    },
+    {
+        id: 6,
+        title: 'Автопилоты',
+        categoryId: 5,
+    },
+    {
+        id: 7,
+        title: 'Электронные антенны GPS и компасы ',
+        categoryId: 5,
+    },
+    {
+        id: 4,
+        title: 'Трандюсеры преобразователи датчики эхолота',
+        categoryId: 5,
+    },
+    {
+        id: 9,
+        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
+        categoryId: 5,
+    },
+    {
+        id: 10,
+        title: 'Цифровые индикаторные дисплеи',
+        categoryId: 5,
+    },
+    {
+        id: 8,
+        title: 'Радиостанции и АИС класса B',
+        categoryId: 5,
+    },
+
+    {
+        id: 2,
+        title: 'Троллинговые электромоторы с GPS якорем',
+        categoryId: 5,
+    },
+
+
+
+
+
+
+    {
+        id: 4,
+        title: 'Картплоттеры /эхолоты',
+        categoryId: 6,
+    },
+    {
+        id: 5,
+        title: 'РЛС/ радары',
+        categoryId: 6,
+    },
+    {
+        id: 6,
+        title: 'Автопилоты',
+        categoryId: 6,
+    },
+    {
+        id: 7,
+        title: 'Электронные антенны GPS и компасы ',
+        categoryId: 6,
+    },
+    {
+        id: 4,
+        title: 'Трандюсеры преобразователи датчики эхолота',
+        categoryId: 6,
+    },
+
+    {
+        id: 9,
+        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
+        categoryId: 6,
+    },
+    {
+        id: 10,
+        title: 'Цифровые индикаторные дисплеи',
+        categoryId: 6,
+    },
+
+    {
+        id: 8,
+        title: 'Радиостанции и АИС класса B',
+        categoryId: 6,
+    },
+
+    {
+        id: 2,
+        title: 'Троллинговые электромоторы с GPS якорем',
+        categoryId: 6,
+    },
+
+
+
+
+
+
+
+    {
+        id: 4,
+        title: 'Картплоттеры /эхолоты',
+        categoryId: 7,
+    },
+    {
+        id: 7,
+        title: 'Электронные антенны GPS и компасы ',
+        categoryId: 7,
+    },
+    {
+        id: 9,
+        title: 'Сетевые кабели NMEA 2000 и ETHERNET',
+        categoryId: 7,
+    },
+    {
+        id: 2,
+        title: 'Троллинговые электромоторы с GPS якорем',
+        categoryId: 7,
+    },
+
+
+
+
+
+
+    {
+        id: 4,
         title: 'Картплоттеры /эхолоты',
         categoryId: 8,
     },
     {
-        id: 7,
+        id: 5,
         title: 'РЛС/ радары',
         categoryId: 8,
     },
     {
-        id: 7,
+        id: 9,
         title: 'Сетевые кабели NMEA 2000 и ETHERNET',
         categoryId:8,
     },
     {
-        id: 7,
+        id: 10,
         title: 'Цифровые индикаторные дисплеи',
         categoryId: 8,
     },
