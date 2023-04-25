@@ -64,7 +64,7 @@ const Aboutus = ({ Bigtitle }) => {
                                     13+
                                 </div>
                                 <div className={styles.box__describe}>
-                                    опыта работы в сфере судостроения
+                                    лет опыта работы в сфере судостроения
                                 </div>
                             </div>
 

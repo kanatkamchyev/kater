@@ -59,7 +59,7 @@ const Modal = ({ active, setActive, item, HandleClick }) => {
 
                         <div className={styles.modal__content__motors}>
                             <div className={styles.modal__right__title}>
-                                Моторы
+                                 Характеристики
                             </div>
 
                             <div className={styles.about__content__theirgun}>

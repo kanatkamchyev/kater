@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 
 const Brands = () => {
 
-
+ 
     return (
         <div className={styles.Brands}>
             <div className={styles.brand__inner}>

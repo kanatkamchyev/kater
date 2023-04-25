@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination , Autoplay} from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 
 
@@ -23,6 +23,20 @@ export const CanIHelp = () => {
           </div>
           <div className={styles.home_left}>
             <div className={styles.home_title}><p>Чем я могу</p> <p>быть полезен </p> <p>вам?</p> </div>
+            <div className={styles.home_blocks}>
+              <div className={styles.home_mini_block}>
+                <div className={styles.home_mini_img}>
+                  <Image src={boat} alt="" />
+                </div>
+                <div className={styles.home_description}><p>Большой опыт в продаже и подбора</p> <p>деталей морских и речных судов</p>  </div>
+              </div>
+              <div className={styles.home_mini_block}>
+                <div className={styles.home_mini_img}>
+                  <Image src={boat} alt="" />
+                </div>
+                <div className={styles.home_description}> <p>Понимание механизмов</p> <p>работы дилерской сети</p> </div>
+              </div>
+            </div>
           </div>
           <div className={styles.home_right}>
             <div className={styles.home_swiper}>
@@ -34,7 +48,7 @@ export const CanIHelp = () => {
                       clickable: true,
                     }}
                     modules={[Pagination, Autoplay]}
-                    autoplay={{delay:4000}}
+                    autoplay={{ delay: 4000 }}
                     className={styles.mySwiper}
                   >
                     <SwiperSlide>
@@ -55,11 +69,11 @@ export const CanIHelp = () => {
                   </Swiper>
                 </div>
                 <Link href='/Catalog'>
-                <div className={styles.home_catalog_class}>
-                  <div className={styles.home_catalog}>
-                    Каталог
+                  <div className={styles.home_catalog_class}>
+                    <div className={styles.home_catalog}>
+                      Каталог
+                    </div>
                   </div>
-                </div>
                 </Link>
 
               </div>
@@ -82,7 +96,7 @@ export const CanIHelp = () => {
           </div>
 
         </div>
-        <div className={styles.home_blocks}>
+        <div className={styles.home_blocks_active}>
           <div className={styles.home_mini_block}>
             <div className={styles.home_mini_img}>
               <Image src={boat} alt="" />

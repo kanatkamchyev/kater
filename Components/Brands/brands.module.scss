@@ -58,8 +58,10 @@
             li {
                 display: flex;
                 gap: 20px;
+                font-family: "Inter", sans-serif;
                 align-items: center;
                 margin-bottom: 20px;
+                font-weight: 500;
                 font-size: 16px;
                 cursor: pointer;
 
@@ -83,13 +85,16 @@
     .brand__fitst__hovercol .hidden__motors {
         display: none;
         overflow-y: scroll;
+        padding: 67px 0 67px 61px ;
 
         li {
             display: flex;
             padding: 0 20px;
+            font-family: "Inter", sans-serif;
             gap: 22px;
             margin-bottom: 22px;
             align-items: center;
+            font-weight: 500;
             font-size: 24px;
             cursor: pointer;
             color: #002656;
