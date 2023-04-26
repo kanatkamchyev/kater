@@ -1,11 +1,15 @@
 .home {
   padding-top: 155px;
   border: 1px solid #A6B5CA;
+  overflow: hidden;
 
 
   &_bg img {
     position: relative;
-    left: 265px;
+    left: 650px;
+    top: 100px;
+    width: 1168px;
+    height: 1046px;
   }
 
   &__inner {
@@ -155,6 +159,14 @@
 }
 
 @media (max-width:1465px) {
+
+
+  .home_bg img{
+    width: 800px;
+    left: 200px;
+    height: 700px;
+  }
+
   .home__inside {
     flex-direction: column;
   }

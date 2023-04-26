@@ -11,6 +11,7 @@ import more from '../../assets/img/seemore.svg'
 import SwiperButtons from './SwiperButtons'
 import ProjectBox from '../Projects/ProjectBox'
 import Link from 'next/link'
+import { More } from '../../assets/svg/svg'
 
 
 
@@ -88,7 +89,7 @@ const Forwork = () => {
           <div className={styles.work__head__right}>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ducimus ratione in enim illum nam adipisci fugit ad praesentium error maxime </p>
                 <Link href="/OurProjects">
-                <p className={styles.work__seemore}>увидеть больше <Image src={more} alt="" /></p>
+                <p className={styles.work__seemore}>увидеть больше <More/></p>
                 </Link>
 
           </div>

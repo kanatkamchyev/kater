@@ -24,60 +24,15 @@ const Aboutus = ({ Bigtitle }) => {
                 {Bigtitle === '' ?
                     <div className={styles.about__card__head}>
                         <div className={styles.about__card__head__title}>
-                            Про нас
+                            Про компанию
                         </div>
-                        <div className={styles.about__card__head__description}>
+                        {/* <div className={styles.about__card__head__description}>
                             Миссия компании: стать надёжным другом и поставщиком владельцу судна!
                             мМы помогаем Вам воплотить мечту в реальность, не переплачивая …
-                        </div>
+                        </div> */}
                         <div className={styles.about__card__head__bg}>
                             <Image src={gradient} alt="" />
                         </div>
-
-                        <div className={styles.about__card__head__boxes}>
-                            <div className={styles.box}>
-                                <div className={styles.box__h1}>
-                                    1500+
-                                </div>
-                                <div className={styles.box__describe}>
-                                    оказанных технических консультаций
-                                </div>
-                            </div>
-                            <div className={styles.box}>
-                                <div className={styles.box__h1}>
-                                    1000+
-                                </div>
-                                <div className={styles.box__describe}>
-                                    довольных клиентов
-                                </div>
-                            </div>
-                            <div className={styles.box}>
-                                <div className={styles.box__h1}>
-                                    500+
-                                </div>
-                                <div className={styles.box__describe}>
-                                    успешно выполненных заказов
-                                </div>
-                            </div>
-                            <div className={styles.box}>
-                                <div className={styles.box__h1}>
-                                    13+
-                                </div>
-                                <div className={styles.box__describe}>
-                                    лет опыта работы в сфере судостроения
-                                </div>
-                            </div>
-
-                            <div className={styles.box}>
-                                <div className={styles.box__h1}>
-                                    100+
-                                </div>
-                                <div className={styles.box__describe}>
-                                    оборудованных катеров
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     : null
                 }
@@ -95,11 +50,7 @@ const Aboutus = ({ Bigtitle }) => {
                             </div>
 
                             <div className={styles.about__company__head}>
-                            Основатель компании: Абрамов Сергей
-                            </div>
-
-                            <div className={styles.about__company__head}>
-                            «Удовольствие на воде можно получить только тогда, когда чувствуешь, что всё под контролем и ты в безопасности!  За это отвечает оборудование
+                                Основатель компании: Абрамов Сергей
                             </div>
 
                             <div className={styles.about__card__sites}>
@@ -146,6 +97,57 @@ const Aboutus = ({ Bigtitle }) => {
                         </div>
                     </div>
                 </div>
+
+                {
+                    Bigtitle === ''
+                    ?
+                    <div className={styles.about__card__head__boxes}>
+                    <div className={styles.box}>
+                        <div className={styles.box__h1}>
+                            1500+
+                        </div>
+                        <div className={styles.box__describe}>
+                            оказанных технических консультаций
+                        </div>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.box__h1}>
+                            1000+
+                        </div>
+                        <div className={styles.box__describe}>
+                            довольных клиентов
+                        </div>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.box__h1}>
+                            500+
+                        </div>
+                        <div className={styles.box__describe}>
+                            успешно выполненных заказов
+                        </div>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.box__h1}>
+                            13 лет
+                        </div>
+                        <div className={styles.box__describe}>
+                         опыта работы в сфере судостроения
+                        </div>
+                    </div>
+
+                    <div className={styles.box}>
+                        <div className={styles.box__h1}>
+                            100+
+                        </div>
+                        <div className={styles.box__describe}>
+                            оборудованных катеров
+                        </div>
+                    </div>
+                </div>
+
+                :
+                null
+                }
             </div>
         </div>
     )

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 
 
@@ -9,6 +8,8 @@ import { categories } from '../FakeObjects'
 import { useRouter } from 'next/router'
 
 const Brands = () => {
+
+    const [active, setActive] = useState(false)
 
  
     return (
@@ -24,9 +25,9 @@ const Brands = () => {
                             <div className={styles.brand__second__col}>
                                 <div className={styles.brand__image__style}>
                                     <div className={styles.brand__first__image}>
-                                        <Image className={styles.garmin} src={item1.category_img} alt="" />
+                                        <Image className={styles.garmin} src={item1.category_img} alt="" onClick={() => setActive(true)} />
                                     </div>
-                                <AboutBrandMore item1={item1}/>
+                                <AboutBrandMore item1={item1} active={active} setActive={setActive}/>
                                 </div>
                             </div>
 

@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import pic from '../../assets/img/pic.png'
 import styles from  '../Kater/kater.module.scss'
-import { ClosePopUp } from '../../assets/svg/svg'
+import { ClosePopUp, More } from '../../assets/svg/svg'
 import Link from 'next/link'
 
 const HelmDescribe = ({kater, active, setActive}) => {
@@ -27,7 +27,8 @@ const HelmDescribe = ({kater, active, setActive}) => {
                 </div>
                 <div className={styles.model__kater__btn}>
                     <Link href='/Catalog'>
-                    <button>Каталог</button>
+                    <button>Каталог <More/></button>
+
                     </Link>
                 </div>
 

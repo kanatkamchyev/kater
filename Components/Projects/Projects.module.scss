@@ -67,10 +67,23 @@
     flex-wrap: wrap;
 }
 
+.project__hide_active{
+    animation: anit 0.8s ease-in-out;
+}
+
 .project__box__inside {
     padding: 41px 49px 35px 48px;
 }
 
+@keyframes anit {
+    to{
+        transform: scale(1);
+    }
+
+    from{
+        transform: scale(0.8);
+    }
+}
 .otzyv__avito {
     margin-top: 37px;
     display: flex;

@@ -13,7 +13,7 @@ export const categoryElements = [
         id: 1,
         title: 'Подвесные лодочные моторы',
         categoryId: 1,
-    }, 
+    },
 
 
 
@@ -272,15 +272,15 @@ export const categoryElements = [
     {
         id: 9,
         title: 'Сетевые кабели NMEA 2000 и ETHERNET',
-        categoryId:8,
+        categoryId: 8,
     },
     {
         id: 10,
         title: 'Цифровые индикаторные дисплеи',
         categoryId: 8,
     },
-   
-    
+
+
 ]
 
 
@@ -290,30 +290,38 @@ export const categories = [
         id: 1,
         category_img: suzuki,
     },
-    {
-        id: 2,
-        category_img: yamaha,
-    },
-    {
-        id: 3,
-        category_img: lowrance,
-    },
+
+
     {
         id: 4,
         category_img: simrad,
     },
-    {
-        id: 5,
-        category_img: garmin,
-    },
+
     {
         id: 6,
         category_img: raymarine,
     },
+
+    {
+        id: 2,
+        category_img: yamaha,
+    },
+  
+    {
+        id: 5,
+        category_img: garmin,
+    },
+ 
     {
         id: 7,
         category_img: humminbird,
     },
+
+    {
+        id: 3,
+        category_img: lowrance,
+    },
+
     {
         id: 8,
         category_img: furuno,

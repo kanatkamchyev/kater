@@ -2,6 +2,10 @@
     margin-top: 140px;
 }
 
+.work__seemore{
+
+}
+
 .work {
 
     &__inner {
@@ -35,16 +39,24 @@
     }
 
     &__seemore {
+        margin-top: 24px;
+        max-width: 282px;
+        padding:17px 24px ;
         cursor: pointer;
         display: flex;
         align-items: center;
         gap: 16px;
         font-family: 'Prompt', sans-serif;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 20px;
         line-height: 30px;
-        color: #363636;
+        color: #FFFFFF;
+        background: #385981;
+
+        svg path{
+            fill: #FFFFFF;
+        }
     }
 
     &__bottom {

@@ -6,7 +6,8 @@ import { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 
 
-import boat from "./assets/svg/boat_icon.svg";
+import boat from "../../assets/img/broken.svg";
+import boats from "../../assets/img/lightt.svg";
 import kater from '../../assets/img/parih.png'
 import home_bg from "./assets/svg/home_bg.svg";
 import styles from '../CanIHelp/help.module.scss'
@@ -32,7 +33,7 @@ export const CanIHelp = () => {
               </div>
               <div className={styles.home_mini_block}>
                 <div className={styles.home_mini_img}>
-                  <Image src={boat} alt="" />
+                  <Image src={boats} alt="" />
                 </div>
                 <div className={styles.home_description}> <p>Понимание механизмов</p> <p>работы дилерской сети</p> </div>
               </div>

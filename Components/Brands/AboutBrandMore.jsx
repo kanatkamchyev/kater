@@ -6,15 +6,13 @@ import { ClosePopUp, SendCatalog } from '../../assets/svg/svg'
 import { categoryElements } from '../../Components/FakeObjects'
 import styles from '../Brands/brands.module.scss'
 
-const AboutBrandMore = ({ item1 }) => {
+const AboutBrandMore = ({active, item1, setActive }) => {
 
-    const [active, setActive] = useState(false)
     const router = useRouter()
 
 
     return (
         <>
-
             <div className={active ? styles.brand__fitst__hovercol_active : styles.brand__fitst__hovercol}>
                 <ul className={active ? styles.hidden__motors_active : styles.hidden__motors}>
                     {

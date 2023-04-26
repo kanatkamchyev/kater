@@ -14,7 +14,7 @@ const ProjectBox = ({ project }) => {
             <div className={styles.project__box__inside}>
                 {
                     activeBox ?
-                        <>
+                        <div className={styles.project__hide_active}>
                             <div className={styles.close__project} onClick={() => setActiveBox(false)}>
                                 <ClosePopUp/>
                             </div>
@@ -46,7 +46,7 @@ const ProjectBox = ({ project }) => {
                                 }
                             </div>
 
-                        </>
+                        </div>
                         :
                         <>
                             <div className={styles.project__image}>

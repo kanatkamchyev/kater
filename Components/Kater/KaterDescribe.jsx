@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../Kater/kater.module.scss'
+import lol from '../../public/imgs/lolalka.png'
 
 
 import pic from '../../assets/img/pic.png'
-import { ClosePopUp } from '../../assets/svg/svg'
+import { ClosePopUp, More } from '../../assets/svg/svg'
 
 const KaterDescribe = ({kater, active, setActive}) => {
   return (
@@ -16,7 +17,7 @@ const KaterDescribe = ({kater, active, setActive}) => {
                     <ClosePopUp/>
                 </div>
                 <div className={styles.model_kater_image}>
-                    <Image src={pic} alt="" />
+                    <Image src={lol} alt="" />
                 </div>
                 <div className={styles.model__kater__titledescribe}>
                 {kater.name2}
@@ -27,7 +28,7 @@ const KaterDescribe = ({kater, active, setActive}) => {
                 </div>
                 <div className={styles.model__kater__btn}>
                     <Link href='/Catalog'>
-                    <button>Каталог</button>
+                    <button>Каталог <More/></button>
                     </Link>
                 </div>
 

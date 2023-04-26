@@ -186,18 +186,19 @@
     position: absolute;
     display: flex;
     gap: 500px;
-    left: 0%;
+    left: 10%;
     bottom: 23%;
 }
 
 
 .kater__about__lodka {
+    padding:100px 50px;
     display: flex;
     justify-content: center;
     border: 1px solid #A6B5CA;
 
     img {
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
@@ -267,6 +268,9 @@
 }
 
 .model__kater__btn button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
     margin-top: 32px;
     padding: 12px 120px;
@@ -278,6 +282,15 @@
     font-size: 24px;
     line-height: 36px;
     color: #FFFFFF;
+    border-radius: 28px;
+
+    svg{
+        width: 30px;
+    }
+
+    svg path{
+      fill: #FFFFFF;
+    }
 }
 
 .model__kater__btn button:hover {

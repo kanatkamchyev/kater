@@ -170,8 +170,8 @@ button {
 }
 
 .modal__content {
-  width: 100vw;
-  height: 100vh;
+  width: 97vw;
+  height: 97vh;
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
@@ -189,7 +189,7 @@ button {
   position: absolute;
   z-index: 100;
   top: 25%;
-  right: 27%;
+  right: 20%;
   opacity: 0;
   pointer-events: none;
   transition: 0.5s;
@@ -258,8 +258,6 @@ button {
 .model_content_kater {
   padding: 20px;
   width: 460px;
-  height: 655px;
-  border-radius: 12px;
   background: white;
   border: 1px solid black;
   transform: scale(0.5);

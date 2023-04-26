@@ -19,65 +19,67 @@ const Modal = ({ active, setActive, item, HandleClick }) => {
                         <div className={styles.flexed__img}>
                             <Image src={item.img} width='350' height='500' />
                             <div className={styles.motorbich}>
-                                    motors
+                                motors
                             </div>
                         </div>
                     </div>
                     <div className={styles.right__modal__content}>
-                        <div className={styles.flex__brand}>
+                        <div className={styles.inner__modal__con}>
 
-                            <div className={styles.moda__petrol__content}>
+                            <div className={styles.flex__brand}>
+
+                                <div className={styles.moda__petrol__content}>
+                                    <div className={styles.modal__right__title}>
+                                        {title}
+                                    </div>
+                                    <div className={styles.modal__right__describe}>
+                                        {description}
+                                    </div>
+
+                                    <div className={styles.modal__right__describe}>
+                                        {delivery}
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className={styles.modal__content__brands}>
                                 <div className={styles.modal__right__title}>
-                                    {title}
-                                </div>
-                                <div className={styles.modal__right__describe}>
-                                    {description}
+                                    Бренды
                                 </div>
 
                                 <div className={styles.modal__right__describe}>
-                                    {delivery}
+                                    Мы поставляем моторы из этих брендов
+                                </div>
+                                <div className={styles.modal__right__brandimg}>
+                                    {
+                                        brands && brands.map((brand) => <Brands brand={brand} key={brand.id} />)
+                                    }
                                 </div>
                             </div>
 
-                        </div>
+                            <div className={styles.modal__content__motors}>
+                                <div className={styles.modal__right__title}>
+                                    Характеристики
+                                </div>
 
-
-                        <div className={styles.modal__content__brands}>
-                            <div className={styles.modal__right__title}>
-                                Бренды
-                            </div>
-
-                            <div className={styles.modal__right__describe}>
-                                Мы поставляем моторы из этих брендов
-                            </div>
-                            <div className={styles.modal__right__brandimg}>
-                                {
-                                    brands && brands.map((brand) => <Brands brand={brand} key={brand.id} />)
-                                }
-                            </div>
-                        </div>
-
-                        <div className={styles.modal__content__motors}>
-                            <div className={styles.modal__right__title}>
-                                 Характеристики
-                            </div>
-
-                            <div className={styles.about__content__theirgun}>
-                                {
-                                    power && power.map((sila) => {
-                                        return (
-                                            <div className={styles.content__motor__power}>
-                                                {sila}
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                            <div className={styles.content__modal__call}>
-                                <button>Позвонить</button>
+                                <div className={styles.about__content__theirgun}>
+                                    {
+                                        power && power.map((sila) => {
+                                            return (
+                                                <div className={styles.content__motor__power}>
+                                                    {sila}
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
                             </div>
                         </div>
-
+                        <div className={styles.content__modal__call}>
+                            <button>Позвонить</button>
+                        </div>
                     </div>
                 </div>
 

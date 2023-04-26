@@ -55,7 +55,6 @@
 
     &__card__head__boxes {
         margin-top: 100px;
-        margin-bottom: 150px;
         display: flex;
         gap: 36px;
 
@@ -209,6 +208,24 @@
 
 
 @media(max-width:650px) {
+
+    .about__card__letter{
+        bottom: auto;
+    }
+
+    .about__card__right{
+        padding-top: 200px;
+        margin-top: 0;
+    }
+
+    .mySwiper{
+        height: 400px;
+    }
+
+    .about__card__right .about_swiper_content{
+        height: 400px;
+    }
+
     .about__inner {
         padding: 20px;
     }
@@ -240,12 +257,16 @@
         height: 400px;
     }
 
+    .about__card__head__title {
+font-size: 60px;
+    }
+
 }
 
 @media(max-width:460px) {
     .about__card__head__title {
         font-size: 54px;
-        line-height: 72px;
+        line-height: 42px;
     }
 
     .about__card__head__boxes {
@@ -265,8 +286,8 @@
         right: -15%;
     }
 
-    .about__card__letter {
-        bottom: -10%;
+    .about__card__right{
+        padding-top: 130px;
     }
 
     .about__card__letter img {
@@ -276,6 +297,12 @@
 }
 
 @media(max-width:420px) {
+
+    .about__card__head__title {
+
+        font-size: 34px;
+            }
+
     .about__card__right .swiper-vertical>.swiper-wrapper {
         height: 300px;
     }
