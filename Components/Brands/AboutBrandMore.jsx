@@ -9,6 +9,7 @@ import styles from '../Brands/brands.module.scss'
 const AboutBrandMore = ({active, item1, setActive }) => {
 
     const router = useRouter()
+    
 
 
     return (

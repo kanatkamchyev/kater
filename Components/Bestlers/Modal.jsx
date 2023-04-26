@@ -7,12 +7,12 @@ import styles from '../Bestlers/braslets.module.scss'
 import Brands from './Brands'
 
 
-const Modal = ({ active, setActive, item, HandleClick }) => {
+const Modal = ({ active, setActive, item, }) => {
 
     const { brands, title, description, delivery, power } = item
 
     return (
-        <div className={active ? "modal active" : "modal"} onClick={HandleClick}>
+        <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
             <div className={active ? "modal__content active" : "modal__content"} onClick={(e) => e.stopPropagation()}>
                 <div className={styles.all__modal__content}>
                     <div className={styles.left__modal__content}>
@@ -83,7 +83,7 @@ const Modal = ({ active, setActive, item, HandleClick }) => {
                     </div>
                 </div>
 
-                <div className={styles.modal__content__closes} onClick={HandleClick}>
+                <div className={styles.modal__content__closes} onClick={() => setActive(false)}>
                     <ClosePopUp />
                 </div>
             </div>

@@ -215,9 +215,9 @@
 
 
 .right__modal__content {
-    border: 1px solid hsl(215, 25%, 72%);
+    border-left: 1px solid hsl(215, 25%, 72%);
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     overflow-y: scroll;
 }
 
@@ -284,8 +284,9 @@
 }
 
 .modal__brand__imgages {
+    position: relative;
     border: 1px solid #A6B5CA;
-    width: 207px;
+    width: 200px;
     height: 180px;
     display: flex;
     justify-content: center;
@@ -305,8 +306,9 @@
 
 
     button {
-        margin-top: 15px;
-        padding: 10px 10px;
+        position: absolute;
+        bottom: 0;
+        padding: 13px 20px;
         background: #385981;
         cursor: pointer;
 
@@ -314,7 +316,7 @@
             font-family: 'Prompt', sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 21px;
             letter-spacing: 0.05em;
             color: #FFFFFF;
@@ -368,7 +370,7 @@
 }
 
 .content__modal__call {
-    width: 100%;
+    width: 49%;
     position: fixed;
     bottom: 0;
     z-index: 999;
@@ -656,6 +658,11 @@
         display: block;
     }
 
+    .right__modal__content{
+        border: none;
+        border-top: 1px solid #A6B5CA;
+    }
+
     .left__modal__content{
         height: 45vh;
     }
@@ -704,14 +711,6 @@
     .content__modal__call button {
         padding: 10px 80px;
         font-size: 20px;
-    }
-
-    .modal__right__brandimg {
-        display: block;
-    }
-
-    .modal__brand__imgages {
-        width: 100%;
     }
 
 }
@@ -770,6 +769,24 @@
 
 
 @media (max-width:470px) {
+
+    .modal__right__brandimg{
+        gap: 5px;
+    }
+
+    .modal__brand__imgages{
+        width: 49%;
+        height: 130px;
+
+        button{
+            padding: 10px 20px;
+
+            a{
+                font-size: 12px;
+            }
+        }
+
+    }
 
     .motorbich {
         font-size: 72px;
@@ -849,6 +866,19 @@
 
 }
 
+@media (max-width:401px) {
+    .modal__brand__imgages{
+        button{
+            padding: 10px 15px;
+
+            a{
+                font-size: 12px;
+            }
+        }
+
+    }
+
+}
 
 @media (max-width:390px) {
 
@@ -857,3 +887,17 @@
     }
 
 }   
+
+@media (max-width:381px) {
+    .modal__brand__imgages{
+        button{
+            padding: 10px 5px;
+
+            a{
+                font-size: 12px;
+            }
+        }
+
+    }
+
+}

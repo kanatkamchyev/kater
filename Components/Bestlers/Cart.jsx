@@ -26,8 +26,7 @@ const Cart = ({ item }) => {
     }, [])
 
     const HandleClick = () => {
-        setActive(!active)
-        toggle()
+        setActive(true)
     }
 
 
@@ -63,7 +62,7 @@ const Cart = ({ item }) => {
                         <button>Позвонить</button>
                     </Link>
                 </div>
-                <Modal active={active} setActive={setActive} item={item} HandleClick={HandleClick}/>
+                <Modal active={active} setActive={setActive} item={item}/>
             </div>
         </div>
 

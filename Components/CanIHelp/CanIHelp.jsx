@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import boat from "../../assets/img/broken.svg";
 import boats from "../../assets/img/lightt.svg";
-import kater from '../../assets/img/parih.png'
+import kater from '../../assets/img/headMotor.svg'
 import home_bg from "./assets/svg/home_bg.svg";
 import styles from '../CanIHelp/help.module.scss'
 import Link from "next/link";
