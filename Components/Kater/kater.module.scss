@@ -322,10 +322,6 @@
         left: 25%;
     }
 
-    .about__detail__kater__stadii2 {
-        left: 15%;
-    }
-
     .about__detail__kater__stadii3 {
         gap: 400px;
         left: 10%;
@@ -501,6 +497,15 @@
 
 
 @media (max-width:600px) {
+
+
+    .about__detail__kater__stadii2 {
+        left: 5%;
+    }
+
+    .kater__about__lodka{
+        padding: 50px 20px 50px 0;
+    }
 
     .model_kater_title {
         font-size: 16px;

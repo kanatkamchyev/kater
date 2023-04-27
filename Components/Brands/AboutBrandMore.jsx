@@ -24,12 +24,12 @@ const AboutBrandMore = ({active, item1, setActive }) => {
                                 onClick={() => {
                                     router.push({
                                         pathname: '/Catalog/',
-                                        query: { activeAll: true, id: item.id },
+                                        query: { activeAll: true, id: item.id }
                                     })
                                 }}>
-                                <li>{item.title.substr(0, 23)}<SendCatalog /></li>
+
+                                <li>{item.title.substr(0, 23)} <SendCatalog /></li>
                             </div>
-                            
                         : null)
                     }
                 </ul>

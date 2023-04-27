@@ -55,7 +55,7 @@ const Cart = ({ item }) => {
                 </div>
 
                 <div className={styles.brestler__card__title}>
-                    {item.title.substr(0, 40)}
+                    {item.title.substr(0, 25)}
                 </div>
                 <div className={styles.brestler__card__btn}>
                     <Link href='/Contacts'>

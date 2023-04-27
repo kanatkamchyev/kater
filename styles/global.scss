@@ -53,28 +53,6 @@ button {
   }
 }
 
-.header__burger__menu.active {
-  bottom: 10px;
-
-  span {
-    bottom: 10px;
-    transition: 0.6s ease;
-    transform: rotate(-45deg);
-  }
-
-  span::before {
-    display: none;
-  }
-
-  span::after {
-    top: 0;
-    transform: rotate(95deg);
-  }
-
-
-}
-
-
 .header_nav.active {
   position: relative;
   z-index: -1;
@@ -113,10 +91,6 @@ button {
   height: 50%;
 }
 
-.header__burger__menu.active {
-  position: absolute;
-  top: 10px;
-}
 
 
 .header_nav_bar.active {
@@ -360,7 +334,6 @@ button {
 
   &__burger__menu {
     display: none;
-    transition: 0.4s ease-in-out;
   }
 
 
@@ -378,6 +351,16 @@ button {
 
 @media(max-width:1340px) {
 
+  .header__burger__menu{
+    display: inline;
+    cursor: pointer;
+
+    svg{
+      width: 25px;
+      height: 25px;
+    }
+
+  }
 
 
   .header {
@@ -388,58 +371,26 @@ button {
       padding-left: 0;
     }
 
+    &_logo{
+      padding-left: 22px;
+    }
+
+    &__burger__menu{
+      padding-right: 22px;
+    }
+
+    &__burger__menu.active{
+      padding-right: 22px;
+    }
+
+
 
     &_nav {
       display: none;
     }
 
-    &_logo {
-      padding-left: 22px;
-    }
-
     &_btn {
       display: none;
-    }
-
-    &__burger__menu {
-      display: inline;
-      width: 33px;
-      height: 30px;
-      position: relative;
-      cursor: pointer;
-      top: 10px;
-      right: 22px;
-
-      span {
-        border-radius: 10px;
-
-        position: absolute;
-        width: 33px;
-        height: 3px;
-        background-color: black;
-      }
-
-      span::before {
-        border-radius: 10px;
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 19px;
-        width: 25px;
-        height: 3px;
-        background-color: black;
-      }
-
-      span::after {
-        border-radius: 10px;
-        content: '';
-        position: absolute;
-        top: 9px;
-        width: 33px;
-        height: 3px;
-        background-color: black;
-      }
-
     }
 
   }
@@ -454,7 +405,6 @@ button {
 
   .model_content_kater {
     width: 300px;
-    height: 485px;
   }
 }
 
@@ -486,27 +436,17 @@ button {
       }
     }
 
-
-
-    &__burger__menu {
-      right: 10px;
-      top: 0px;
-
-      span {
-        width: 26px;
-      }
-
-      span::before {
-        width: 15px;
-      }
-
-      span::after {
-        width: 26px;
-      }
-
+    &_logo{
+      padding-left: 15px;
     }
 
+    &__burger__menu{
+      padding-right: 15px;
+    }
 
+    &__burger__menu.active{
+      padding-right:15px;
+    }
 
   }
 }

@@ -25,7 +25,7 @@ const Brands = () => {
                             <div className={styles.brand__second__col}>
                                 <div className={styles.brand__image__style}>
                                     <div className={styles.brand__first__image}>
-                                        <Image className={styles.garmin} src={item1.category_img} alt="" onClick={() => setActive(true)} />
+                                        <Image className={styles.garmin} src={item1.category_img} alt="" onClick={() => setActive(!active)} />
                                     </div>
                                 <AboutBrandMore item1={item1} active={active} setActive={setActive}/>
                                 </div>

@@ -38,6 +38,7 @@ export const categoryElements = [
         title: 'РЛС/ радары',
         categoryId: 3,
     },
+    
     {
         id: 6,
         title: 'Автопилоты',
