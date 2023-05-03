@@ -145,7 +145,7 @@ button {
 
 .modal__content {
   width: 98vw;
-  height: 97vh;
+  height: 97vh !important;
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
