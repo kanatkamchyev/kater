@@ -83,8 +83,7 @@
       transition: 1s;
 
       img {
-        width: 210px;
-        height: 583px;
+        padding-top: 150px;
       }
     }
 
@@ -93,7 +92,6 @@
   &_swiper_content {
     display: flex;
     flex-direction: column;
-    padding-top: 87px;
     width: 468px;
     height: 764px;
     background: radial-gradient(56.54% 56.54% at 50% 50%, #3E6EA9 0%, #385981 100%);
@@ -262,8 +260,8 @@
   }
 
   .home_swiper .home__swiper__img img{
-    width: 100px;
-    height: 300px;
+    max-width: 360px;
+    height: 400px;
   }
 
   
@@ -311,7 +309,6 @@
   }
 
   .home_swiper_content{
-    padding-top: 50px;
     width: 220px;
     height: 350px;
   }
@@ -334,7 +331,7 @@
   }
 
   .home_swiper .home__swiper__img img{
-    width: 100px;
+    padding-top: 70px;
     height: 260px;
   }
 
@@ -374,7 +371,7 @@
   }
 
   .home_title p{
-      font-size: 44px;
+      font-size: 38px;
       line-height: 44px;
 
   }

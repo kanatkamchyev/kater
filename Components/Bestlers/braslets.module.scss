@@ -902,6 +902,11 @@
 }   
 
 @media (max-width:381px) {
+
+    .flexed__img img{
+        left: 17%;
+    }
+
     .modal__brand__imgages{
         button{
             padding: 10px 5px;
