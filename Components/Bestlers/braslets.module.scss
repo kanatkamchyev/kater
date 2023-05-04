@@ -461,21 +461,30 @@
     cursor: pointer;
 }
 
-
+.page__num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 46px;
+   height: 47px;
+   border: 1px solid #2A96CD;
+   border-radius: 50%;
+   cursor: pointer;
+}
 
 .page__num a.page__link {
-    padding: 11px 18px;
-    border: 1px solid #2A96CD;
-    border-radius: 50%;
     color: #2A96CD;
 
 }
 
-.page__num a.page__link:hover {
+.page__num:hover {
     background-color: #2A96CD;
-    color: #FFFFFF;
 }
 
+
+.page__num:hover a.page__link {
+    color: #FFFFFF;
+}
 
 
 
