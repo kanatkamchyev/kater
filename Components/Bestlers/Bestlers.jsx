@@ -553,7 +553,7 @@ const Brestlers = () => {
     <div className={styles.Brestlers}>
       <div className={styles.brestler__head}>
         <div className={styles.brestler__title}>
-          Бестселлеры
+          Ассортимент
         </div>
       </div>
 

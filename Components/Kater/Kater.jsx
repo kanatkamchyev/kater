@@ -18,7 +18,7 @@ import { useSelector } from 'react-redux'
 const Katers = [
     {
         id: 1,
-        title: 'Открытый катер',
+        title: 'Катера для прогулки и рыбалки',
         image: '/imgs/openkater.png',
         moreImg:"/imgs/kaen.png",
         name: 'Троллинговый мотор ',
@@ -37,7 +37,7 @@ const Katers = [
 
     {
         id: 2,
-        title: 'Закрытый катер',
+        title: 'Кабинный катер для дальних поездок',
         moreImg:"/imgs/zakryt.png",
         image: '/imgs/closedkater.png',
         name: 'МДФ картплоттер ',
@@ -56,7 +56,7 @@ const Katers = [
 
     {
         id: 3,
-        title: 'Парусный катер',
+        title: 'Парусные яхта для путешествий',
         moreImg:"/imgs/sorasnba.png",
         image: '/imgs/paruskater.png',
         name: 'МФД картплоттер',
@@ -113,7 +113,7 @@ const Kater = () => {
         <div className={styles.Kater}>
             <div className={activeKater ? styles.kater__inner_active : styles.kater__inner}>
                 <div className={activeKater? styles.kater__title_active : styles.kater__title}>
-                    <p>Визуальный подбор деталей</p>
+                    <p>Оборудование, которое можно установить на катера</p>
                 </div>
 
                 {

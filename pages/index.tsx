@@ -11,7 +11,7 @@ export default function Home() {
     <CanIHelp/>
     <Brands/>
     <Kater/>
-    <Aboutus Bigtitle ='Про нас'/>
+    <Aboutus Bigtitle ='О компании'/>
     <Forwork/>
     </>
   )

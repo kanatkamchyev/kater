@@ -21,8 +21,8 @@ const Pagination = ({ cartPerPage, totalCarts, paginate }) => {
                 {
                     pageNumbers.map((num) => {
                         return (
-                            <div className={styles.page__num}>
-                                <a href="#" onClick={() => paginate(num)} className={paginate ? styles.page__link : styles.page__link}>{num}</a>
+                            <div className={styles.page__num} onClick={() => paginate(num)}>
+                                <a href="#" className={paginate ? styles.page__link : styles.page__link}>{num}</a>
                             </div>
                         )
                     })

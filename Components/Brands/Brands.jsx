@@ -16,7 +16,7 @@ const Brands = () => {
         <div className={styles.Brands}>
             <div className={styles.brand__inner}>
                 <div className={styles.brand__title}>
-                    Бренды
+                    Торговые марки
                 </div>
                 <div className={styles.brand__names}>
                     {

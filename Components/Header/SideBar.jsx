@@ -27,7 +27,7 @@ const NavBars = [
 
 
     {
-        name: 'Конаткты',
+        name: 'Контaкты',
         link: '/Contacts',
     },
 
